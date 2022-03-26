@@ -1,0 +1,393 @@
+team_name,team_url,team_manager,team_league_matches,team_league_pd,team_league_pts,team_avg_age,team_foreigners,team_avg_val,team_total_val,team_transfer_income,team_transfer_expense,team_transfer_net,team_rank,year
+Manchester City,https://www.transfermarkt.com/manchester-city/startseite/verein/281,Pep Guardiola,38,72,98,24.3,34,26160000,1200000000,57600000,78590000,-20990000,1,2018
+Liverpool FC,https://www.transfermarkt.com/fc-liverpool/startseite/verein/31,Jürgen Klopp,38,67,97,24.7,25,30060000,1170000000,41320000,182200000,-140880000,2,2018
+Chelsea FC,https://www.transfermarkt.com/fc-chelsea/startseite/verein/631,Antonio Conte,38,24,72,25.6,40,21600000,1170000000,83250000,208800000,-125550000,3,2018
+Tottenham Hotspur,https://www.transfermarkt.com/tottenham-hotspur/startseite/verein/148,Mauricio Pochettino,38,28,71,25.4,20,26430000,898600000,5350000,0,5350000,4,2018
+Manchester United,https://www.transfermarkt.com/manchester-united/startseite/verein/985,José Mourinho,38,11,66,25.3,22,22160000,797600000,30550000,82700000,-52150000,6,2018
+Arsenal FC,https://www.transfermarkt.com/fc-arsenal/startseite/verein/11,Unai Emery,38,22,70,24.9,28,15690000,659050000,9100000,80150000,-71050000,5,2018
+Everton FC,https://www.transfermarkt.com/fc-everton/startseite/verein/29,Marco Silva,38,8,54,26.0,28,13230000,529100000,28650000,99800000,-71150000,8,2018
+Leicester City,https://www.transfermarkt.com/leicester-city/startseite/verein/1003,Claude Puel,38,3,52,26.4,26,11730000,434100000,95800000,114600000,-18800000,9,2018
+West Ham United,https://www.transfermarkt.com/west-ham-united/startseite/verein/379,Manuel Pellegrini,38,-3,52,26.6,23,9700000,359000000,13770000,100900000,-87130000,10,2018
+AFC Bournemouth,https://www.transfermarkt.com/afc-bournemouth/startseite/verein/989,Eddie Howe,38,-14,45,25.7,16,8380000,310000000,20200000,89100000,-68900000,14,2018
+Southampton FC,https://www.transfermarkt.com/fc-southampton/startseite/verein/180,Mark Hughes,38,-20,39,24.9,18,7640000,305400000,26100000,62250000,-36150000,16,2018
+Wolverhampton Wanderers,https://www.transfermarkt.com/wolverhampton-wanderers/startseite/verein/543,Nuno Espírito Santo,38,1,57,24.1,26,7570000,302900000,23300000,112750000,-89450000,7,2018
+Crystal Palace,https://www.transfermarkt.com/crystal-palace/startseite/verein/873,Roy Hodgson,38,-2,49,26.4,21,8029999,289000000,350000,11850000,-11500000,12,2018
+Fulham FC,https://www.transfermarkt.com/fc-fulham/startseite/verein/931,Slavisa Jokanovic,38,-47,26,25.7,26,7700000,254250000,5350000,116500000,-111150000,19,2018
+Newcastle United,https://www.transfermarkt.com/newcastle-united/startseite/verein/762,Rafael Benítez,38,-6,45,26.0,22,6610000,244650000,51050000,59750000,-8700000,13,2018
+Watford FC,https://www.transfermarkt.com/fc-watford/startseite/verein/1010,Javi Gracia,38,-7,50,26.2,32,6130000,239100000,51840000,30100000,21740000,11,2018
+Burnley FC,https://www.transfermarkt.com/fc-burnley/startseite/verein/1132,Sean Dyche,38,-23,40,28.1,14,5980000,197250000,8000000,33000000,-25000000,15,2018
+Brighton & Hove Albion,https://www.transfermarkt.com/brighton-amp-hove-albion/startseite/verein/1237,Chris Hughton,38,-25,36,25.8,29,4740000,194350000,13620000,87120000,-73500000,17,2018
+Huddersfield Town,https://www.transfermarkt.com/huddersfield-town/startseite/verein/1110,David Wagner,38,-54,16,25.3,21,4170000,137450000,12330000,50700000,-38370000,20,2018
+Cardiff City,https://www.transfermarkt.com/cardiff-city/startseite/verein/603,Neil Warnock,38,-35,34,27.3,20,3230000,113000000,0,51200000,-51200000,18,2018
+Manchester City,https://www.transfermarkt.com/manchester-city/startseite/verein/281,Pep Guardiola,38,67,81,25.1,23,30840000,1050000000,71000000,159520000,-88520000,2,2019
+Liverpool FC,https://www.transfermarkt.com/fc-liverpool/startseite/verein/31,Jürgen Klopp,38,52,99,23.3,31,17900000,1000000000,44500000,10400000,34100000,1,2019
+Tottenham Hotspur,https://www.transfermarkt.com/tottenham-hotspur/startseite/verein/148,Mauricio Pochettino,38,14,59,24.8,22,22410000,806800000,64500000,148500000,-84000000,6,2019
+Chelsea FC,https://www.transfermarkt.com/fc-chelsea/startseite/verein/631,Frank Lampard,38,15,66,24.1,22,19610000,705850000,157270000,45000000,112270000,4,2019
+Manchester United,https://www.transfermarkt.com/manchester-united/startseite/verein/985,Ole Gunnar Solskjaer,38,30,66,23.9,24,15590000,670450000,81180000,234800000,-153620000,3,2019
+Arsenal FC,https://www.transfermarkt.com/fc-arsenal/startseite/verein/11,Unai Emery,38,8,56,24.3,23,15990000,607650000,53650000,160800000,-107150000,8,2019
+Everton FC,https://www.transfermarkt.com/fc-everton/startseite/verein/29,Marco Silva,38,-12,49,26.0,21,12010000,420300000,87800000,121000000,-33200000,12,2019
+Leicester City,https://www.transfermarkt.com/leicester-city/startseite/verein/1003,Brendan Rodgers,38,26,62,25.9,18,12850000,411100000,88500000,104300000,-15800000,5,2019
+Wolverhampton Wanderers,https://www.transfermarkt.com/wolverhampton-wanderers/startseite/verein/543,Nuno Espírito Santo,38,11,59,23.1,30,7280000,320330000,24100000,116700000,-92600000,7,2019
+West Ham United,https://www.transfermarkt.com/west-ham-united/startseite/verein/379,Manuel Pellegrini,38,-13,39,26.5,25,7990000,303600000,55230000,119800000,-64570000,16,2019
+AFC Bournemouth,https://www.transfermarkt.com/afc-bournemouth/startseite/verein/989,Eddie Howe,38,-25,34,24.8,16,6980000,272180000,34630000,54910000,-20280000,18,2019
+Newcastle United,https://www.transfermarkt.com/newcastle-united/startseite/verein/762,Steve Bruce,38,-20,44,26.0,22,6160000,252480000,35640000,72900000,-37260000,13,2019
+Aston Villa,https://www.transfermarkt.com/aston-villa/startseite/verein/405,Dean Smith,38,-26,35,25.7,22,6100000,231700000,3000000,159500000,-156500000,17,2019
+Southampton FC,https://www.transfermarkt.com/fc-southampton/startseite/verein/180,Ralph Hasenhüttl,38,-9,52,24.4,18,5850000,210750000,27300000,61500000,-34200000,11,2019
+Brighton & Hove Albion,https://www.transfermarkt.com/brighton-amp-hove-albion/startseite/verein/1237,Graham Potter,38,-15,41,24.7,28,4460000,200780000,8500000,72840000,-64340000,15,2019
+Watford FC,https://www.transfermarkt.com/fc-watford/startseite/verein/1010,Javi Gracia,38,-28,34,25.7,27,4640000,199600000,25400000,48500000,-23100000,19,2019
+Crystal Palace,https://www.transfermarkt.com/crystal-palace/startseite/verein/873,Roy Hodgson,38,-19,43,26.8,18,5740000,189330000,55380000,7600000,47780000,14,2019
+Burnley FC,https://www.transfermarkt.com/fc-burnley/startseite/verein/1132,Sean Dyche,38,-7,54,26.3,12,4680000,163880000,13550000,23850000,-10300000,10,2019
+Norwich City,https://www.transfermarkt.com/norwich-city/startseite/verein/1123,Daniel Farke,38,-49,21,25.5,25,3820000,145330000,2200000,8820000,-6620000,20,2019
+Sheffield United,https://www.transfermarkt.com/sheffield-united/startseite/verein/350,Chris Wilder,38,0,54,27.3,15,4080000,138600000,350000,70500000,-70150000,9,2019
+Manchester City,https://www.transfermarkt.com/manchester-city/startseite/verein/281,Pep Guardiola,38,51,86,24.9,23,29010000,1040000000,76650000,172300000,-95650000,1,2020
+Liverpool FC,https://www.transfermarkt.com/fc-liverpool/startseite/verein/31,Jürgen Klopp,38,26,69,24.4,28,22550000,969650000,17200000,82650000,-65450000,3,2020
+Chelsea FC,https://www.transfermarkt.com/fc-chelsea/startseite/verein/631,Frank Lampard,38,22,67,25.2,23,22800000,889200000,57400000,247200000,-189800000,4,2020
+Manchester United,https://www.transfermarkt.com/manchester-united/startseite/verein/985,Ole Gunnar Solskjaer,38,29,74,24.9,24,19740000,770050000,19500000,83800000,-64300000,2,2020
+Tottenham Hotspur,https://www.transfermarkt.com/tottenham-hotspur/startseite/verein/148,José Mourinho,38,23,62,24.6,23,17160000,703500000,13300000,110500000,-97200000,7,2020
+Arsenal FC,https://www.transfermarkt.com/fc-arsenal/startseite/verein/11,Mikel Arteta,38,16,61,24.4,26,14740000,619250000,19150000,86000000,-66850000,8,2020
+Everton FC,https://www.transfermarkt.com/fc-everton/startseite/verein/29,Carlo Ancelotti,38,-1,59,24.7,26,11620000,511200000,4430000,73370000,-68940000,10,2020
+Leicester City,https://www.transfermarkt.com/leicester-city/startseite/verein/1003,Brendan Rodgers,38,18,66,25.3,26,12770000,510700000,53770000,58500000,-4730000,5,2020
+Wolverhampton Wanderers,https://www.transfermarkt.com/wolverhampton-wanderers/startseite/verein/543,Nuno Espírito Santo,38,-16,45,23.9,32,11850000,450300000,79200000,87800000,-8600000,13,2020
+Aston Villa,https://www.transfermarkt.com/aston-villa/startseite/verein/405,Dean Smith,38,9,55,23.3,24,8130000,430750000,2770000,101350000,-98580000,11,2020
+West Ham United,https://www.transfermarkt.com/west-ham-united/startseite/verein/379,David Moyes,38,15,65,26.5,23,8590000,334900000,45410000,54700000,-9290000,6,2020
+Brighton & Hove Albion,https://www.transfermarkt.com/brighton-amp-hove-albion/startseite/verein/1237,Graham Potter,38,-6,41,24.3,28,6310000,290400000,20600000,28500000,-7900000,16,2020
+Southampton FC,https://www.transfermarkt.com/fc-southampton/startseite/verein/180,Ralph Hasenhüttl,38,-21,43,24.5,19,7250000,282800000,26300000,37300000,-11000000,15,2020
+Newcastle United,https://www.transfermarkt.com/newcastle-united/startseite/verein/762,Steve Bruce,38,-16,45,26.9,18,7740000,255350000,275000,39000000,-38725000,12,2020
+Fulham FC,https://www.transfermarkt.com/fc-fulham/startseite/verein/931,Scott Parker,38,-26,28,26.4,30,6310000,239750000,0,37250000,-37250000,18,2020
+Leeds United,https://www.transfermarkt.com/leeds-united/startseite/verein/399,Marcelo Bielsa,38,8,59,24.5,23,6110000,238100000,0,106800000,-106800000,9,2020
+Crystal Palace,https://www.transfermarkt.com/crystal-palace/startseite/verein/873,Roy Hodgson,38,-25,44,27.7,18,5380000,193850000,20000000,22400000,-2400000,14,2020
+Sheffield United,https://www.transfermarkt.com/sheffield-united/startseite/verein/350,Chris Wilder,38,-43,23,24.9,14,3750000,149850000,0,62700000,-62700000,20,2020
+West Bromwich Albion,https://www.transfermarkt.com/west-bromwich-albion/startseite/verein/984,Slaven Bilic,38,-41,26,26.1,18,3280000,141150000,8100000,42140000,-34040000,19,2020
+Burnley FC,https://www.transfermarkt.com/fc-burnley/startseite/verein/1132,Sean Dyche,38,-22,39,26.6,11,4130000,132300000,2300000,1100000,1200000,17,2020
+Manchester City,https://www.transfermarkt.com/manchester-city/startseite/verein/281,Pep Guardiola,29,50,70,27.4,15,44420000,977300000,93800000,134500000,-40700000,1,2021
+Liverpool FC,https://www.transfermarkt.com/fc-liverpool/startseite/verein/31,Jürgen Klopp,29,55,69,27.0,19,32930000,889000000,27500000,85000000,-57500000,2,2021
+Chelsea FC,https://www.transfermarkt.com/fc-chelsea/startseite/verein/631,Thomas Tuchel,28,38,59,26.8,19,32700000,883000000,121950000,118000000,3950000,3,2021
+Manchester United,https://www.transfermarkt.com/manchester-united/startseite/verein/985,Toby Collyer,29,8,50,28.2,15,30390000,790250000,30700000,140000000,-109300000,6,2021
+Tottenham Hotspur,https://www.transfermarkt.com/tottenham-hotspur/startseite/verein/148,Sven Botman,29,11,51,25.5,15,26380000,580250000,34120000,95900000,-61780000,5,2021
+Leicester City,https://www.transfermarkt.com/leicester-city/startseite/verein/1003,Brendan Rodgers,27,-4,36,27.0,18,19030000,513799999,4000000,67600000,-63600000,10,2021
+Arsenal FC,https://www.transfermarkt.com/fc-arsenal/startseite/verein/11,Mikel Arteta,28,13,54,24.6,14,24330000,511000000,31400000,167420000,-136020000,4,2021
+Everton FC,https://www.transfermarkt.com/fc-everton/startseite/verein/29,Frank Lampard,27,-18,25,27.1,15,15650000,453750000,46000000,39500000,6500000,17,2021
+Aston Villa,https://www.transfermarkt.com/aston-villa/startseite/verein/405,Steven Gerrard,29,1,36,26.5,12,20310000,426500000,127000000,129820000,-2820000,9,2021
+West Ham United,https://www.transfermarkt.com/west-ham-united/startseite/verein/379,David Moyes,30,10,48,28.8,16,14610000,350750000,4240000,74500000,-70260000,7,2021
+Wolverhampton Wanderers,https://www.transfermarkt.com/wolverhampton-wanderers/startseite/verein/543,Bruno Lage,30,5,46,25.9,21,13540000,338500000,31800000,37600000,-5800000,8,2021
+Newcastle United,https://www.transfermarkt.com/newcastle-united/startseite/verein/762,Eddie Howe,29,-17,31,28.3,15,9940000,278400000,0,131500000,-131500000,14,2021
+Leeds United,https://www.transfermarkt.com/leeds-united/startseite/verein/399,Jesse Marsch,30,-33,29,24.9,15,11040000,265000000,0,58900000,-58900000,16,2021
+Southampton FC,https://www.transfermarkt.com/fc-southampton/startseite/verein/180,Jun-ho Son,29,-9,35,26.5,15,9490000,246750000,60370000,43100000,17270000,11,2021
+Crystal Palace,https://www.transfermarkt.com/crystal-palace/startseite/verein/873,Lucas Zelarayán,29,1,34,27.4,14,9230000,239950000,0,85620000,-85620000,12,2021
+Brighton & Hove Albion,https://www.transfermarkt.com/brighton-amp-hove-albion/startseite/verein/1237,Graham Potter,29,-10,33,25.4,15,10420000,239700000,78500000,73700000,4800000,13,2021
+Brentford FC,https://www.transfermarkt.com/fc-brentford/startseite/verein/1148,Thomas Frank,30,-14,30,25.6,22,8760000,218900000,1000000,36700000,-35700000,15,2021
+Norwich City,https://www.transfermarkt.com/norwich-city/startseite/verein/1123,Dean Smith,29,-45,17,25.5,19,5980000,155550000,38400000,64050000,-25650000,20,2021
+Burnley FC,https://www.transfermarkt.com/fc-burnley/startseite/verein/1132,Sean Dyche,27,-16,21,29.8,10,6040000,145000000,40500000,45900000,-5400000,19,2021
+Watford FC,https://www.transfermarkt.com/fc-watford/startseite/verein/1010,Roy Hodgson,29,-26,22,27.8,25,4880000,141600000,15850000,43500000,-27650000,18,2021
+FC Barcelona,https://www.transfermarkt.com/fc-barcelona/startseite/verein/131,Ernesto Valverde,38,54,87,24.7,22,27300000,1200000000,146050000,141100000,4950000,1,2018
+Real Madrid,https://www.transfermarkt.com/real-madrid/startseite/verein/418,Julen Lopetegui,38,17,68,24.6,20,24600000,1030000000,136100000,162750000,-26650000,3,2018
+Atlético de Madrid,https://www.transfermarkt.com/atletico-madrid/startseite/verein/13,Diego Simeone,38,26,76,24.2,22,23820000,1000000000,57900000,168000000,-110100000,2,2018
+Valencia CF,https://www.transfermarkt.com/fc-valencia/startseite/verein/1049,Marcelino,38,16,61,25.0,19,14260000,513450000,68800000,129199999,-60399999,4,2018
+Sevilla FC,https://www.transfermarkt.com/fc-sevilla/startseite/verein/368,Pablo Machín,38,15,59,26.0,21,7910000,308300000,93800000,81050000,12750000,6,2018
+Real Betis Balompié,https://www.transfermarkt.com/real-betis-sevilla/startseite/verein/150,Quique Setién,38,-8,50,25.4,17,7990000,303500000,49300000,44500000,4800000,10,2018
+Real Sociedad,https://www.transfermarkt.com/real-sociedad-san-sebastian/startseite/verein/681,Asier Garitano,38,-1,50,24.1,9,9120000,300950000,30800000,12000000,18800000,9,2018
+Villarreal CF,https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050,Javier Calleja,38,-3,44,26.8,17,6380000,248950000,54800000,92900000,-38100000,14,2018
+Athletic Bilbao,https://www.transfermarkt.com/athletic-bilbao/startseite/verein/621,Eduardo Berizzo,38,-4,53,26.9,2,7070000,240250000,80000000,32900000,47100000,8,2018
+Celta de Vigo,https://www.transfermarkt.com/celta-vigo/startseite/verein/940,Antonio Mohamed,38,-9,41,25.4,21,7280000,240100000,35700000,30000000,5700000,17,2018
+RCD Espanyol Barcelona,https://www.transfermarkt.com/espanyol-barcelona/startseite/verein/714,Rubi,38,-2,53,26.7,9,6120000,195700000,30800000,22600000,8200000,7,2018
+Getafe CF,https://www.transfermarkt.com/fc-getafe/startseite/verein/3709,Pepe Bordalás,38,13,59,26.7,15,4099999,135400000,6000000,27250000,-21250000,5,2018
+Deportivo Alavés,https://www.transfermarkt.com/deportivo-alaves/startseite/verein/1108,Abelardo,38,-11,50,25.4,12,3170000,114100000,9000000,10000000,-1000000,11,2018
+CD Leganés,https://www.transfermarkt.com/cd-leganes/startseite/verein/1244,Mauricio Pellegrino,38,-6,45,25.9,19,2960000,112450000,24600000,18900000,5700000,13,2018
+Levante UD,https://www.transfermarkt.com/ud-levante/startseite/verein/3368,Paco López,38,-7,44,25.8,11,3390000,108550000,39000000,26700000,12300000,15,2018
+Girona FC,https://www.transfermarkt.com/fc-girona/startseite/verein/12321,Eusebio,38,-16,37,25.9,12,2950000,97250000,3300000,10200000,-6900000,18,2018
+SD Eibar,https://www.transfermarkt.com/sd-eibar/startseite/verein/1533,José Luis Mendilibar,38,-4,47,27.3,8,3000000,96100000,7750000,8000000,-250000,12,2018
+Rayo Vallecano,https://www.transfermarkt.com/rayo-vallecano/startseite/verein/367,Míchel,38,-29,32,26.2,13,2410000,86700000,13000000,12300000,700000,20,2018
+Real Valladolid CF,https://www.transfermarkt.com/real-valladolid/startseite/verein/366,Sergio,38,-19,41,25.1,8,2020000,83000000,0,10100000,-10100000,16,2018
+SD Huesca,https://www.transfermarkt.com/sd-huesca/startseite/verein/5358,Leo Franco,38,-22,33,26.7,15,1570000,61400000,400000,9800000,-9400000,19,2018
+FC Barcelona,https://www.transfermarkt.com/fc-barcelona/startseite/verein/131,Ernesto Valverde,38,48,82,24.4,25,21650000,930930000,152900000,298500000,-145600000,2,2019
+Real Madrid,https://www.transfermarkt.com/real-madrid/startseite/verein/418,Zinédine Zidane,38,45,87,25.6,20,27690000,913750000,135500000,355500000,-220000000,1,2019
+Atlético de Madrid,https://www.transfermarkt.com/atletico-madrid/startseite/verein/13,Diego Simeone,38,24,70,24.8,17,21220000,721350000,309000000,246200000,62800000,3,2019
+Valencia CF,https://www.transfermarkt.com/fc-valencia/startseite/verein/1049,Marcelino,38,-7,53,25.5,17,12960000,427800000,56300000,75000000,-18700000,9,2019
+Real Sociedad,https://www.transfermarkt.com/real-sociedad-san-sebastian/startseite/verein/681,Imanol Alguacil,38,8,56,24.5,8,9650000,347550000,9500000,31750000,-22250000,6,2019
+Sevilla FC,https://www.transfermarkt.com/fc-sevilla/startseite/verein/368,Julen Lopetegui,38,20,70,25.7,16,8420000,294750000,131449999,178730000,-47280001,4,2019
+Real Betis Balompié,https://www.transfermarkt.com/real-betis-sevilla/startseite/verein/150,Rubi,38,-12,41,25.0,10,6430000,244350000,72000000,92750000,-20750000,15,2019
+Athletic Bilbao,https://www.transfermarkt.com/athletic-bilbao/startseite/verein/621,Gaizka Garitano,38,3,51,26.3,1,6620000,211750000,0,0,0,11,2019
+Villarreal CF,https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050,Javier Calleja,38,14,60,26.4,11,6320000,208680000,69300000,43800000,25500000,5,2019
+Getafe CF,https://www.transfermarkt.com/fc-getafe/startseite/verein/3709,Pepe Bordalás,38,6,54,28.0,17,5320000,175450000,11250000,21500000,-10250000,8,2019
+Celta de Vigo,https://www.transfermarkt.com/celta-vigo/startseite/verein/940,Fran Escribá,38,-12,37,24.9,13,4770000,167000000,40650000,24600000,16050000,17,2019
+RCD Espanyol Barcelona,https://www.transfermarkt.com/espanyol-barcelona/startseite/verein/714,David Gallego,38,-31,25,25.8,12,3900000,156050000,59000000,61500000,-2500000,20,2019
+CD Leganés,https://www.transfermarkt.com/cd-leganes/startseite/verein/1244,Mauricio Pellegrino,38,-21,36,25.3,16,2810000,109700000,40820000,16450000,24370000,18,2019
+Deportivo Alavés,https://www.transfermarkt.com/deportivo-alaves/startseite/verein/1108,Asier Garitano,38,-25,39,26.1,11,2890000,106750000,22500000,11770000,10730000,16,2019
+Levante UD,https://www.transfermarkt.com/ud-levante/startseite/verein/3368,Paco López,38,-6,49,26.5,8,2740000,90500000,14900000,14600000,300000,12,2019
+Real Valladolid CF,https://www.transfermarkt.com/real-valladolid/startseite/verein/366,Sergio,38,-11,42,25.6,9,2370000,87780000,8000000,1400000,6600000,13,2019
+RCD Mallorca,https://www.transfermarkt.com/rcd-mallorca/startseite/verein/237,Vicente Moreno,38,-25,33,26.4,15,1850000,64680000,0,7500000,-7500000,19,2019
+CA Osasuna,https://www.transfermarkt.com/ca-osasuna/startseite/verein/331,Jagoba Arrasate,38,-8,52,26.4,4,1700000,62780000,300000,14450000,-14150000,10,2019
+Granada CF,https://www.transfermarkt.com/fc-granada/startseite/verein/16795,Diego Martínez,38,7,56,25.9,13,1660000,56580000,300000,10750000,-10450000,7,2019
+SD Eibar,https://www.transfermarkt.com/sd-eibar/startseite/verein/1533,José Luis Mendilibar,38,-17,42,28.3,11,1850000,53750000,27000000,17300000,9700000,14,2019
+FC Barcelona,https://www.transfermarkt.com/fc-barcelona/startseite/verein/131,Quique Setién,38,47,79,25.0,21,24770000,817500000,146800000,112000000,34800000,3,2020
+Real Madrid,https://www.transfermarkt.com/real-madrid/startseite/verein/418,Zinédine Zidane,38,39,84,24.8,17,21280000,787300000,104200000,0,104200000,2,2020
+Atlético de Madrid,https://www.transfermarkt.com/atletico-madrid/startseite/verein/13,Diego Simeone,38,42,86,24.9,21,19820000,773100000,83300000,89000000,-5700000,1,2020
+Sevilla FC,https://www.transfermarkt.com/fc-sevilla/startseite/verein/368,Julen Lopetegui,38,20,77,25.6,17,11010000,418250000,19680000,72250000,-52570000,4,2020
+Real Sociedad,https://www.transfermarkt.com/real-sociedad-san-sebastian/startseite/verein/681,Imanol Alguacil,38,21,62,24.7,6,10700000,406600000,28250000,10000000,18250000,5,2020
+Villarreal CF,https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050,Javier Calleja,38,16,58,25.9,13,8130000,292600000,26650000,36500000,-9850000,7,2020
+Valencia CF,https://www.transfermarkt.com/fc-valencia/startseite/verein/1049,Javi Gracia,38,-3,43,24.7,20,7970000,278850000,87850000,0,87850000,13,2020
+Real Betis Balompié,https://www.transfermarkt.com/real-betis-sevilla/startseite/verein/150,Manuel Pellegrini,38,0,61,26.8,12,6290000,207700000,43800000,0,43800000,6,2020
+Athletic Bilbao,https://www.transfermarkt.com/athletic-bilbao/startseite/verein/621,Gaizka Garitano,38,4,46,25.9,1,6380000,204150000,0,12000000,-12000000,9,2020
+Getafe CF,https://www.transfermarkt.com/fc-getafe/startseite/verein/3709,Pepe Bordalás,38,-15,38,25.4,19,5150000,170100000,9750000,22050000,-12300000,15,2020
+Celta de Vigo,https://www.transfermarkt.com/celta-vigo/startseite/verein/940,Óscar García,38,-2,53,24.3,12,3800000,155850000,2500000,3000000,-500000,8,2020
+Granada CF,https://www.transfermarkt.com/fc-granada/startseite/verein/16795,Diego Martínez,38,-18,46,24.9,17,2790000,122650000,0,20500000,-20500000,10,2020
+Levante UD,https://www.transfermarkt.com/ud-levante/startseite/verein/3368,Paco López,38,-11,41,26.5,10,3320000,113000000,5000000,4000000,1000000,14,2020
+CA Osasuna,https://www.transfermarkt.com/ca-osasuna/startseite/verein/331,Jagoba Arrasate,38,-11,44,27.0,7,2690000,96750000,3450000,8250000,-4800000,11,2020
+SD Eibar,https://www.transfermarkt.com/sd-eibar/startseite/verein/1533,José Luis Mendilibar,38,-23,30,27.1,9,2450000,83400000,150000,2000000,-1850000,20,2020
+Deportivo Alavés,https://www.transfermarkt.com/deportivo-alaves/startseite/verein/1108,Pablo Machín,38,-21,38,25.6,10,2280000,79800000,4880000,0,4880000,16,2020
+SD Huesca,https://www.transfermarkt.com/sd-huesca/startseite/verein/5358,Míchel,38,-19,34,26.5,8,1890000,64099999,0,3900000,-3900000,18,2020
+Real Valladolid CF,https://www.transfermarkt.com/real-valladolid/startseite/verein/366,Sergio,38,-23,31,26.9,9,1620000,63050000,12100000,9850000,2250000,19,2020
+Cádiz CF,https://www.transfermarkt.com/fc-cadiz/startseite/verein/2687,Álvaro Cervera,38,-22,44,27.2,16,1160000,47650000,0,10100000,-10100000,12,2020
+Elche CF,https://www.transfermarkt.com/fc-elche/startseite/verein/1531,Jorge Almirón,38,-21,36,26.7,14,1090000,45650000,5300000,6100000,-800000,17,2020
+Real Madrid,https://www.transfermarkt.com/real-madrid/startseite/verein/418,Carlo Ancelotti,29,34,66,27.4,18,30000000,780000000,78000000,31000000,47000000,1,2021
+FC Barcelona,https://www.transfermarkt.com/fc-barcelona/startseite/verein/131,Xavi,28,27,54,25.5,15,21700000,651000000,69500000,69500000,0,3,2021
+Atlético de Madrid,https://www.transfermarkt.com/atletico-madrid/startseite/verein/13,Diego Simeone,29,17,54,28.3,19,29390000,646500000,23750000,76700000,-52950000,4,2021
+Sevilla FC,https://www.transfermarkt.com/fc-sevilla/startseite/verein/368,Sergio Ramos,29,21,57,28.1,19,16340000,424900000,28500000,41500000,-13000000,2,2021
+Real Sociedad,https://www.transfermarkt.com/real-sociedad-san-sebastian/startseite/verein/681,Imanol Alguacil,29,0,48,26.0,7,14120000,395400000,0,2500000,-2500000,6,2021
+Villarreal CF,https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050,Unai Emery,29,21,45,27.8,12,13920000,362000000,10750000,54500000,-43750000,7,2021
+Valencia CF,https://www.transfermarkt.com/fc-valencia/startseite/verein/1049,Pepe Bordalás,29,-1,40,24.6,17,11950000,298800000,2700000,12850000,-10150000,9,2021
+Real Betis Balompié,https://www.transfermarkt.com/real-betis-sevilla/startseite/verein/150,Manuel Pellegrini,29,15,50,28.8,11,8520000,230100000,14000000,3500000,10500000,5,2021
+Athletic Bilbao,https://www.transfermarkt.com/athletic-bilbao/startseite/verein/621,Unai Simón,29,5,41,26.3,0,7620000,190600000,0,0,0,8,2021
+Getafe CF,https://www.transfermarkt.com/fc-getafe/startseite/verein/3709,Quique Sánchez Flores,29,-6,29,26.2,13,6010000,150300000,21000000,16000000,5000000,15,2021
+Celta de Vigo,https://www.transfermarkt.com/celta-vigo/startseite/verein/940,Eduardo Coudet,29,1,36,27.8,9,5940000,124700000,1800000,9020000,-7220000,11,2021
+RCD Espanyol Barcelona,https://www.transfermarkt.com/espanyol-barcelona/startseite/verein/714,Vicente Moreno,29,-6,36,27.2,6,4330000,112500000,0,6000000,-6000000,12,2021
+CA Osasuna,https://www.transfermarkt.com/ca-osasuna/startseite/verein/331,Jagoba Arrasate,29,-7,38,27.9,4,3650000,87600000,0,8700000,-8700000,10,2021
+Levante UD,https://www.transfermarkt.com/ud-levante/startseite/verein/3368,Alessio Lisci,29,-27,19,28.0,9,3110000,87200000,0,1250000,-1250000,20,2021
+Granada CF,https://www.transfermarkt.com/fc-granada/startseite/verein/16795,Rubén Torrecilla,29,-15,28,27.6,13,2970000,86000000,3000000,15700000,-12700000,16,2021
+RCD Mallorca,https://www.transfermarkt.com/rcd-mallorca/startseite/verein/237,Luis García,29,-23,26,27.5,13,2870000,77500000,9000000,10000000,-1000000,18,2021
+Deportivo Alavés,https://www.transfermarkt.com/deportivo-alaves/startseite/verein/1108,José Luis Mendilibar,29,-25,22,26.8,8,2570000,66900000,3500000,1150000,2350000,19,2021
+Cádiz CF,https://www.transfermarkt.com/fc-cadiz/startseite/verein/2687,Sergio,29,-16,27,28.1,10,2220000,62150000,0,6100000,-6100000,17,2021
+Rayo Vallecano,https://www.transfermarkt.com/rayo-vallecano/startseite/verein/367,Andoni Iraola,28,-5,32,27.9,12,2490000,57300000,2200000,4300000,-2100000,13,2021
+Elche CF,https://www.transfermarkt.com/fc-elche/startseite/verein/1531,Francisco Rodríguez,29,-10,32,29.3,10,2020000,48500000,200000,8199999,-7999999,14,2021
+Bayern Munich,https://www.transfermarkt.com/fc-bayern-munchen/startseite/verein/27,Niko Kovac,34,56,78,25.7,15,24530000,784880000,84000000,10000000,74000000,1,2018
+Borussia Dortmund,https://www.transfermarkt.com/borussia-dortmund/startseite/verein/16,Lucien Favre,34,37,76,24.4,19,18920000,643250000,114200000,90500000,23700000,2,2018
+RB Leipzig,https://www.transfermarkt.com/rasenballsport-leipzig/startseite/verein/23826,Ralf Rangnick,34,34,66,22.6,22,14090000,479000000,72750000,65629999,7120001,3,2018
+Bayer 04 Leverkusen,https://www.transfermarkt.com/bayer-04-leverkusen/startseite/verein/15,Heiko Herrlich,34,17,58,24.6,16,13850000,429400000,45000000,31500000,13500000,4,2018
+TSG 1899 Hoffenheim,https://www.transfermarkt.com/tsg-1899-hoffenheim/startseite/verein/533,Julian Nagelsmann,34,18,51,24.4,22,8850000,336250000,6120000,32000000,-25880000,9,2018
+Eintracht Frankfurt,https://www.transfermarkt.com/eintracht-frankfurt/startseite/verein/24,Adi Hütter,34,12,54,24.8,29,6670000,313400000,18900000,28950000,-10050000,7,2018
+Borussia Mönchengladbach,https://www.transfermarkt.com/borussia-monchengladbach/startseite/verein/18,Dieter Hecking,34,13,55,25.2,17,8810000,264300000,32950000,32549999,400001,5,2018
+VfL Wolfsburg,https://www.transfermarkt.com/vfl-wolfsburg/startseite/verein/82,Bruno Labbadia,34,12,55,25.1,21,6370000,229250000,800000,36000000,-35200000,6,2018
+FC Schalke 04,https://www.transfermarkt.com/fc-schalke-04/startseite/verein/33,Domenico Tedesco,34,-18,33,25.1,24,5670000,221300000,46150000,62200000,-16050000,14,2018
+Hertha BSC,https://www.transfermarkt.com/hertha-bsc/startseite/verein/44,Pál Dárdai,34,-8,43,24.4,19,5770000,207630000,16900000,16000000,900000,11,2018
+SV Werder Bremen,https://www.transfermarkt.com/sv-werder-bremen/startseite/verein/86,Florian Kohfeldt,34,9,53,25.8,18,5090000,168050000,26850000,25800000,1050000,8,2018
+1.FSV Mainz 05,https://www.transfermarkt.com/1-fsv-mainz-05/startseite/verein/39,Sandro Schwarz,34,-11,43,24.7,20,4560000,159730000,56100000,30000000,26100000,12,2018
+VfB Stuttgart,https://www.transfermarkt.com/vfb-stuttgart/startseite/verein/79,Tayfun Korkut,34,-38,28,24.9,17,4230000,143750000,13250000,45760000,-32510000,16,2018
+FC Augsburg,https://www.transfermarkt.com/fc-augsburg/startseite/verein/167,Manuel Baum,34,-20,32,24.9,18,3480000,139250000,2850000,6650000,-3800000,15,2018
+SC Freiburg,https://www.transfermarkt.com/sc-freiburg/startseite/verein/60,Christian Streich,34,-15,36,25.0,9,3590000,122100000,22680000,18400000,4280000,13,2018
+Fortuna Düsseldorf,https://www.transfermarkt.com/fortuna-dusseldorf/startseite/verein/38,Friedhelm Funkel,34,-16,44,26.3,16,2790000,94950000,600000,7500000,-6900000,10,2018
+Hannover 96,https://www.transfermarkt.com/hannover-96/startseite/verein/42,André Breitenreiter,34,-40,21,25.7,18,2470000,91430000,13540000,18520000,-4980000,17,2018
+1.FC Nuremberg,https://www.transfermarkt.com/1-fc-nurnberg/startseite/verein/4,Michael Köllner,34,-42,19,25.2,11,1880000,54400000,0,4850000,-4850000,18,2018
+Bayern Munich,https://www.transfermarkt.com/fc-bayern-munchen/startseite/verein/27,Niko Kovac,34,68,82,23.7,20,20460000,777330000,54000000,139500000,-85500000,1,2019
+Borussia Dortmund,https://www.transfermarkt.com/borussia-dortmund/startseite/verein/16,Lucien Favre,34,43,69,24.5,19,17680000,654050000,132250000,148500000,-16250000,2,2019
+RB Leipzig,https://www.transfermarkt.com/rasenballsport-leipzig/startseite/verein/23826,Julian Nagelsmann,34,44,66,23.0,26,15010000,570480000,45250000,79500000,-34250000,3,2019
+Bayer 04 Leverkusen,https://www.transfermarkt.com/bayer-04-leverkusen/startseite/verein/15,Peter Bosz,34,17,63,25.1,18,13760000,398950000,33500000,96000000,-62500000,5,2019
+Borussia Mönchengladbach,https://www.transfermarkt.com/borussia-monchengladbach/startseite/verein/18,Marco Rose,34,26,65,25.8,19,7490000,254700000,34100000,41500000,-7400000,4,2019
+TSG 1899 Hoffenheim,https://www.transfermarkt.com/tsg-1899-hoffenheim/startseite/verein/533,Alfred Schreuder,34,0,52,26.3,25,6110000,226050000,121400000,55850000,65550000,6,2019
+FC Schalke 04,https://www.transfermarkt.com/fc-schalke-04/startseite/verein/33,David Wagner,34,-20,39,24.2,20,6710000,221580000,20450000,29500000,-9050000,12,2019
+Hertha BSC,https://www.transfermarkt.com/hertha-bsc/startseite/verein/44,Ante Covic,34,-11,41,24.2,20,5170000,217200000,23450000,110700000,-87250000,10,2019
+Eintracht Frankfurt,https://www.transfermarkt.com/eintracht-frankfurt/startseite/verein/24,Adi Hütter,34,-1,45,26.4,23,5970000,208980000,114800000,78340000,36460000,9,2019
+VfL Wolfsburg,https://www.transfermarkt.com/vfl-wolfsburg/startseite/verein/82,Oliver Glasner,34,2,49,24.7,23,5460000,207600000,14300000,37800000,-23500000,7,2019
+SV Werder Bremen,https://www.transfermarkt.com/sv-werder-bremen/startseite/verein/86,Florian Kohfeldt,34,-27,31,26.2,18,3750000,135130000,0,13950000,-13950000,16,2019
+SC Freiburg,https://www.transfermarkt.com/sc-freiburg/startseite/verein/60,Christian Streich,34,1,48,25.8,10,4090000,122650000,8100000,17500000,-9400000,8,2019
+1.FSV Mainz 05,https://www.transfermarkt.com/1-fsv-mainz-05/startseite/verein/39,Sandro Schwarz,34,-21,37,23.9,19,3470000,121580000,27000000,28700000,-1700000,13,2019
+FC Augsburg,https://www.transfermarkt.com/fc-augsburg/startseite/verein/167,Martin Schmidt,34,-18,36,25.4,17,3050000,112950000,20000000,31500000,-11500000,15,2019
+1. FC Köln,https://www.transfermarkt.com/1-fc-koln/startseite/verein/3,Achim Beierlorzer,34,-18,36,25.3,12,2810000,98480000,6850000,20250000,-13400000,14,2019
+Fortuna Düsseldorf,https://www.transfermarkt.com/fortuna-dusseldorf/startseite/verein/38,Friedhelm Funkel,34,-31,30,26.2,16,1940000,71780000,11600000,10750000,850000,17,2019
+1.FC Union Berlin,https://www.transfermarkt.com/1-fc-union-berlin/startseite/verein/89,Urs Fischer,34,-17,41,26.2,11,1210000,41200000,1250000,10050000,-8800000,11,2019
+SC Paderborn 07,https://www.transfermarkt.com/sc-paderborn-07/startseite/verein/127,Steffen Baumgart,34,-37,20,25.3,14,903000,28900000,5800000,750000,5050000,18,2019
+Bayern Munich,https://www.transfermarkt.com/fc-bayern-munchen/startseite/verein/27,Hansi Flick,34,55,78,23.9,21,19070000,858230000,22250000,77250000,-55000000,1,2020
+Borussia Dortmund,https://www.transfermarkt.com/borussia-dortmund/startseite/verein/16,Lucien Favre,34,29,64,25.0,16,19640000,628400000,5500000,50000000,-44500000,3,2020
+RB Leipzig,https://www.transfermarkt.com/rasenballsport-leipzig/startseite/verein/23826,Julian Nagelsmann,34,28,65,23.7,22,17970000,574950000,56500000,58000000,-1500000,2,2020
+Bayer 04 Leverkusen,https://www.transfermarkt.com/bayer-04-leverkusen/startseite/verein/15,Peter Bosz,34,14,52,25.0,21,11310000,373250000,91000000,46200000,44800000,6,2020
+Borussia Mönchengladbach,https://www.transfermarkt.com/borussia-monchengladbach/startseite/verein/18,Marco Rose,34,8,49,25.7,19,9110000,300750000,0,13500000,-13500000,8,2020
+Eintracht Frankfurt,https://www.transfermarkt.com/eintracht-frankfurt/startseite/verein/24,Adi Hütter,34,16,60,25.6,24,7480000,269150000,17700000,10750000,6950000,5,2020
+VfL Wolfsburg,https://www.transfermarkt.com/vfl-wolfsburg/startseite/verein/82,Oliver Glasner,34,24,61,26.0,20,8560000,256829999,11100000,22000000,-10900000,4,2020
+Hertha BSC,https://www.transfermarkt.com/hertha-bsc/startseite/verein/44,Bruno Labbadia,34,-11,35,24.4,21,6020000,228880000,10450000,31250000,-20800000,14,2020
+TSG 1899 Hoffenheim,https://www.transfermarkt.com/tsg-1899-hoffenheim/startseite/verein/533,Sebastian Hoeneß,34,-2,43,25.1,25,6170000,228150000,17750000,4000000,13750000,11,2020
+VfB Stuttgart,https://www.transfermarkt.com/vfb-stuttgart/startseite/verein/79,Pellegrino Matarazzo,34,1,45,23.8,16,5910000,189250000,7500000,14950000,-7450000,9,2020
+1.FSV Mainz 05,https://www.transfermarkt.com/1-fsv-mainz-05/startseite/verein/39,Achim Beierlorzer,34,-17,39,24.9,18,4540000,163300000,13700000,2000000,11700000,12,2020
+SC Freiburg,https://www.transfermarkt.com/sc-freiburg/startseite/verein/60,Christian Streich,34,0,45,25.2,13,4640000,139100000,37950000,14350000,23600000,10,2020
+FC Schalke 04,https://www.transfermarkt.com/fc-schalke-04/startseite/verein/33,David Wagner,34,-61,16,24.8,26,2730000,123050000,5850000,2000000,3850000,18,2020
+1. FC Köln,https://www.transfermarkt.com/1-fc-koln/startseite/verein/3,Markus Gisdol,34,-26,33,24.9,15,3280000,118200000,15000000,18500000,-3500000,16,2020
+SV Werder Bremen,https://www.transfermarkt.com/sv-werder-bremen/startseite/verein/86,Florian Kohfeldt,34,-21,31,25.2,15,3390000,111980000,11700000,11000000,700000,17,2020
+FC Augsburg,https://www.transfermarkt.com/fc-augsburg/startseite/verein/167,Heiko Herrlich,34,-18,36,25.8,18,3000000,93050000,8700000,10300000,-1600000,13,2020
+1.FC Union Berlin,https://www.transfermarkt.com/1-fc-union-berlin/startseite/verein/89,Urs Fischer,34,7,50,25.8,10,2490000,82050000,6920000,1700000,5220000,7,2020
+Arminia Bielefeld,https://www.transfermarkt.com/arminia-bielefeld/startseite/verein/10,Uwe Neuhaus,34,-26,35,24.9,16,1720000,56730000,100000,500000,-400000,15,2020
+Bayern Munich,https://www.transfermarkt.com/fc-bayern-munchen/startseite/verein/27,Julian Nagelsmann,27,53,63,25.7,14,31360000,815250000,4000000,57500000,-53500000,1,2021
+Borussia Dortmund,https://www.transfermarkt.com/borussia-dortmund/startseite/verein/16,Marco Rose,27,29,57,25.0,18,18590000,576250000,108250000,45000000,63250000,2,2021
+RB Leipzig,https://www.transfermarkt.com/rasenballsport-leipzig/startseite/verein/23826,Domenico Tedesco,27,27,45,24.3,19,17460000,454000000,113500000,107620000,5880000,4,2021
+Bayer 04 Leverkusen,https://www.transfermarkt.com/bayer-04-leverkusen/startseite/verein/15,Gerardo Seoane,27,25,48,24.7,20,15460000,417450000,43100000,55350000,-12250000,3,2021
+VfL Wolfsburg,https://www.transfermarkt.com/vfl-wolfsburg/startseite/verein/82,Florian Kohfeldt,27,-13,31,24.8,18,9090000,254400000,16350000,76180000,-59830000,13,2021
+Borussia Mönchengladbach,https://www.transfermarkt.com/borussia-monchengladbach/startseite/verein/18,Adi Hütter,27,-13,33,25.7,13,9130000,237300000,8700000,17000000,-8300000,11,2021
+Eintracht Frankfurt,https://www.transfermarkt.com/eintracht-frankfurt/startseite/verein/24,Oliver Glasner,27,1,38,25.1,20,6240000,199800000,28000000,8250000,19750000,8,2021
+TSG 1899 Hoffenheim,https://www.transfermarkt.com/tsg-1899-hoffenheim/startseite/verein/533,Sebastian Hoeneß,27,9,44,25.2,17,6580000,197450000,850000,0,850000,6,2021
+VfB Stuttgart,https://www.transfermarkt.com/vfb-stuttgart/startseite/verein/79,Pellegrino Matarazzo,27,-15,26,22.7,18,5870000,182100000,39820000,15850000,23970000,14,2021
+SC Freiburg,https://www.transfermarkt.com/sc-freiburg/startseite/verein/60,Christian Streich,27,14,45,25.0,10,5640000,146750000,14550000,9500000,5050000,5,2021
+1.FSV Mainz 05,https://www.transfermarkt.com/1-fsv-mainz-05/startseite/verein/39,Bo Svensson,26,9,37,25.1,13,4880000,122050000,18050000,6900000,11150000,10,2021
+Hertha BSC,https://www.transfermarkt.com/hertha-bsc/startseite/verein/44,Felix Magath,27,-31,26,25.5,17,3440000,106550000,48500000,27400000,21100000,16,2021
+FC Augsburg,https://www.transfermarkt.com/fc-augsburg/startseite/verein/167,Markus Weinzierl,26,-15,26,25.9,17,3530000,98800000,12800000,24060000,-11260000,15,2021
+1. FC Köln,https://www.transfermarkt.com/1-fc-koln/startseite/verein/3,Steffen Baumgart,27,-2,40,25.0,10,2700000,75510000,23450000,550000,22900000,7,2021
+1.FC Union Berlin,https://www.transfermarkt.com/1-fc-union-berlin/startseite/verein/89,Urs Fischer,27,-5,38,27.4,11,2650000,71600000,19550000,17550000,2000000,9,2021
+Arminia Bielefeld,https://www.transfermarkt.com/arminia-bielefeld/startseite/verein/10,Frank Kramer,27,-16,25,24.8,16,2230000,55750000,500000,9800000,-9300000,17,2021
+VfL Bochum,https://www.transfermarkt.com/vfl-bochum/startseite/verein/80,Thomas Reis,27,-11,32,27.2,12,1440000,41850000,350000,0,350000,12,2021
+SpVgg Greuther Fürth,https://www.transfermarkt.com/spvgg-greuther-furth/startseite/verein/65,Stefan Leitl,27,-46,15,24.9,11,1100000,29800000,3550000,1400000,2150000,18,2021
+Juventus FC,https://www.transfermarkt.com/juventus-turin/startseite/verein/506,Massimiliano Allegri,38,40,90,25.0,25,14760000,871050000,111670000,263200000,-151530000,1,2018
+SSC Napoli,https://www.transfermarkt.com/ssc-neapel/startseite/verein/6195,Carlo Ancelotti,38,38,79,24.3,27,11980000,646800000,100800000,71000000,29800000,2,2018
+Inter Milan,https://www.transfermarkt.com/inter-mailand/startseite/verein/46,Luciano Spalletti,38,24,69,24.0,30,10300000,617930000,86600000,97600000,-11000000,4,2018
+AC Milan,https://www.transfermarkt.com/ac-mailand/startseite/verein/5,Gennaro Gattuso,38,19,68,24.4,22,12860000,578480000,88100000,193770000,-105670000,5,2018
+AS Roma,https://www.transfermarkt.com/as-rom/startseite/verein/12,Eusebio Di Francesco,38,18,66,23.7,27,8050000,459050000,150460000,164100000,-13640000,6,2018
+Atalanta BC,https://www.transfermarkt.com/atalanta-bergamo/startseite/verein/800,Gian Piero Gasperini,38,31,69,22.7,29,4179999,367680000,25060000,59300000,-34240000,3,2018
+ACF Fiorentina,https://www.transfermarkt.com/ac-florenz/startseite/verein/430,Stefano Pioli,38,2,41,22.9,36,5630000,315330000,43370000,57710000,-14340000,16,2018
+SS Lazio,https://www.transfermarkt.com/lazio-rom/startseite/verein/398,Simone Inzaghi,38,10,59,24.4,33,5110000,291150000,38600000,51280000,-12680000,8,2018
+US Sassuolo,https://www.transfermarkt.com/us-sassuolo/startseite/verein/6574,Roberto De Zerbi,38,-7,43,23.8,15,4099999,242050000,50380000,53150000,-2770000,11,2018
+Torino FC,https://www.transfermarkt.com/fc-turin/startseite/verein/416,Walter Mazzarri,38,15,63,23.7,29,3860000,239230000,17200000,53150000,-35950000,7,2018
+UC Sampdoria,https://www.transfermarkt.com/sampdoria-genua/startseite/verein/1038,Marco Giampaolo,38,9,53,23.5,30,3670000,216750000,90120000,55200000,34920000,9,2018
+Udinese Calcio,https://www.transfermarkt.com/udinese-calcio/startseite/verein/410,Julio Velázquez,38,-14,43,24.7,41,3590000,201200000,13530000,49400000,-35870000,12,2018
+Genoa CFC,https://www.transfermarkt.com/genua-cfc/startseite/verein/252,Davide Ballardini,38,-18,38,23.8,35,2780000,191730000,84360000,58970000,25390000,17,2018
+Cagliari Calcio,https://www.transfermarkt.com/cagliari-calcio/startseite/verein/1390,Rolando Maran,38,-18,41,25.9,18,3170000,155380000,7850000,23000000,-15150000,15,2018
+Bologna FC 1909,https://www.transfermarkt.com/fc-bologna/startseite/verein/1025,Filippo Inzaghi,38,-8,44,25.0,27,2490000,119680000,44990000,31220000,13770000,10,2018
+Empoli FC,https://www.transfermarkt.com/fc-empoli/startseite/verein/749,Aurelio Andreazzoli,38,-19,38,24.1,24,1790000,105600000,22900000,17300000,5600000,18,2018
+SPAL,https://www.transfermarkt.com/spal/startseite/verein/2722,Leonardo Semplici,38,-12,42,25.3,20,1910000,97400000,1850000,21900000,-20050000,13,2018
+Parma Calcio 1913,https://www.transfermarkt.com/parma-calcio-1913/startseite/verein/130,Roberto D'Aversa,38,-20,41,25.6,20,1370000,95750000,596000,20400000,-19804000,14,2018
+Chievo Verona,https://www.transfermarkt.com/chievo-verona/startseite/verein/862,Lorenzo D'Anna,38,-50,17,24.7,32,804000,54700000,17620000,9470000,8150000,20,2018
+Frosinone Calcio,https://www.transfermarkt.com/frosinone-calcio/startseite/verein/8970,Moreno Longo,38,-40,25,25.8,10,1240000,54530000,800000,9560000,-8760000,19,2018
+Juventus FC,https://www.transfermarkt.com/juventus-turin/startseite/verein/506,Maurizio Sarri,38,33,83,26.8,23,17420000,661880000,203140000,230500000,-27360000,1,2019
+Inter Milan,https://www.transfermarkt.com/inter-mailand/startseite/verein/46,Antonio Conte,38,45,82,26.7,18,17830000,606050000,66690000,191720000,-125030000,2,2019
+SSC Napoli,https://www.transfermarkt.com/ssc-neapel/startseite/verein/6195,Carlo Ancelotti,38,11,62,26.7,24,16610000,548280000,48280000,209720000,-161440000,7,2019
+AC Milan,https://www.transfermarkt.com/ac-mailand/startseite/verein/5,Marco Giampaolo,38,17,66,25.2,22,10930000,404330000,59230000,114780000,-55550000,6,2019
+AS Roma,https://www.transfermarkt.com/as-rom/startseite/verein/12,Paulo Fonseca,38,26,70,25.6,23,10910000,392730000,106380000,117400000,-11020000,5,2019
+SS Lazio,https://www.transfermarkt.com/lazio-rom/startseite/verein/398,Simone Inzaghi,38,37,78,26.1,24,8940000,303880000,34700000,46880000,-12180000,4,2019
+ACF Fiorentina,https://www.transfermarkt.com/ac-florenz/startseite/verein/430,Vincenzo Montella,38,3,49,24.7,28,7200000,302230000,15320000,56540000,-41220000,10,2019
+Atalanta BC,https://www.transfermarkt.com/atalanta-bergamo/startseite/verein/800,Gian Piero Gasperini,38,50,78,24.9,26,7880000,291430000,97100000,60060000,37040000,3,2019
+US Sassuolo,https://www.transfermarkt.com/us-sassuolo/startseite/verein/6574,Roberto De Zerbi,38,6,51,24.3,17,3820000,167980000,51950000,66090000,-14140000,8,2019
+Cagliari Calcio,https://www.transfermarkt.com/cagliari-calcio/startseite/verein/1390,Rolando Maran,38,-4,45,25.8,16,4090000,167830000,18760000,41600000,-22840000,14,2019
+Torino FC,https://www.transfermarkt.com/fc-turin/startseite/verein/416,Walter Mazzarri,38,-22,40,24.7,17,4420000,163550000,24400000,28800000,-4400000,16,2019
+Genoa CFC,https://www.transfermarkt.com/genua-cfc/startseite/verein/252,Aurelio Andreazzoli,38,-26,39,26.2,25,3310000,142380000,66250000,50370000,15880000,17,2019
+UC Sampdoria,https://www.transfermarkt.com/sampdoria-genua/startseite/verein/1038,Eusebio Di Francesco,38,-17,42,25.1,19,3560000,135280000,74390000,64950000,9440000,15,2019
+Bologna FC 1909,https://www.transfermarkt.com/fc-bologna/startseite/verein/1025,Sinisa Mihajlovic,38,-13,47,24.5,26,3240000,129650000,28680000,67040000,-38360000,12,2019
+Parma Calcio 1913,https://www.transfermarkt.com/parma-calcio-1913/startseite/verein/130,Roberto D'Aversa,38,-1,49,26.1,19,3220000,128750000,18160000,23310000,-5150000,11,2019
+Udinese Calcio,https://www.transfermarkt.com/udinese-calcio/startseite/verein/410,Igor Tudor,38,-14,45,24.9,28,3100000,121080000,59870000,12600000,47270000,13,2019
+Hellas Verona,https://www.transfermarkt.com/hellas-verona/startseite/verein/276,Ivan Juric,38,-4,49,25.0,19,2810000,112530000,43670000,22690000,20980000,9,2019
+Brescia Calcio,https://www.transfermarkt.com/brescia-calcio/startseite/verein/19,Eugenio Corini,38,-44,25,25.9,10,2520000,83230000,100000,18650000,-18550000,19,2019
+SPAL,https://www.transfermarkt.com/spal/startseite/verein/2722,Leonardo Semplici,38,-50,20,25.6,23,1750000,73630000,39450000,26150000,13300000,20,2019
+US Lecce,https://www.transfermarkt.com/us-lecce/startseite/verein/1005,Fabio Liverani,38,-33,35,25.0,17,1110000,52330000,450000,6200000,-5750000,18,2019
+Inter Milan,https://www.transfermarkt.com/inter-mailand/startseite/verein/46,Antonio Conte,38,54,91,25.2,22,16190000,663900000,82550000,125500000,-42950000,1,2020
+Juventus FC,https://www.transfermarkt.com/juventus-turin/startseite/verein/506,Maurizio Sarri,38,39,78,24.7,26,14070000,633300000,107510000,155310000,-47800000,4,2020
+AC Milan,https://www.transfermarkt.com/ac-mailand/startseite/verein/5,Stefano Pioli,38,33,79,23.9,27,13040000,547780000,47950000,34420000,13530000,2,2020
+SSC Napoli,https://www.transfermarkt.com/ssc-neapel/startseite/verein/6195,Gennaro Gattuso,38,45,77,26.0,21,16570000,530200000,122060000,77500000,44560000,5,2020
+Atalanta BC,https://www.transfermarkt.com/atalanta-bergamo/startseite/verein/800,Gian Piero Gasperini,38,43,78,25.0,21,11030000,430000000,73100000,59340000,13760000,3,2020
+AS Roma,https://www.transfermarkt.com/as-rom/startseite/verein/12,Paulo Fonseca,38,10,62,24.6,28,8600000,395650000,47000000,72100000,-25100000,7,2020
+SS Lazio,https://www.transfermarkt.com/lazio-rom/startseite/verein/398,Simone Inzaghi,38,6,68,25.6,32,7420000,326330000,6950000,41620000,-34670000,6,2020
+ACF Fiorentina,https://www.transfermarkt.com/ac-florenz/startseite/verein/430,Giuseppe Iachini,38,-12,40,25.7,24,7000000,286800000,59400000,48500000,10900000,13,2020
+US Sassuolo,https://www.transfermarkt.com/us-sassuolo/startseite/verein/6574,Roberto De Zerbi,38,8,62,24.9,18,6200000,241740000,61860000,28500000,33360000,8,2020
+Cagliari Calcio,https://www.transfermarkt.com/cagliari-calcio/startseite/verein/1390,Walter Zenga,38,-16,37,25.4,19,4470000,187830000,42110000,33800000,8310000,16,2020
+Torino FC,https://www.transfermarkt.com/fc-turin/startseite/verein/416,Moreno Longo,38,-19,37,25.4,22,4380000,175280000,27000000,46150000,-19150000,17,2020
+Udinese Calcio,https://www.transfermarkt.com/udinese-calcio/startseite/verein/410,Luca Gotti,38,-16,40,25.8,30,4120000,173000000,30900000,21500000,9400000,14,2020
+Hellas Verona,https://www.transfermarkt.com/hellas-verona/startseite/verein/276,Ivan Juric,38,-2,45,24.2,20,3420000,157210000,5300000,15750000,-10450000,10,2020
+Bologna FC 1909,https://www.transfermarkt.com/fc-bologna/startseite/verein/1025,Sinisa Mihajlovic,38,-14,41,24.1,27,3410000,153600000,5000000,3150000,1850000,12,2020
+Parma Calcio 1913,https://www.transfermarkt.com/parma-calcio-1913/startseite/verein/130,Roberto D'Aversa,38,-44,20,25.1,30,2430000,128699999,4300000,104330000,-100030000,20,2020
+UC Sampdoria,https://www.transfermarkt.com/sampdoria-genua/startseite/verein/1038,Claudio Ranieri,38,-2,52,26.4,17,3740000,127180000,12100000,16950000,-4850000,9,2020
+Genoa CFC,https://www.transfermarkt.com/genua-cfc/startseite/verein/252,Davide Nicola,38,-11,42,26.5,23,2540000,111930000,64050000,62400000,1650000,11,2020
+Spezia Calcio,https://www.transfermarkt.com/spezia-calcio/startseite/verein/3522,Vincenzo Italiano,38,-20,39,25.7,17,1840000,71680000,1940000,5030000,-3090000,15,2020
+FC Crotone,https://www.transfermarkt.com/fc-crotone/startseite/verein/4083,Giovanni Stroppa,38,-47,23,26.0,19,1290000,52750000,0,5490000,-5490000,19,2020
+Benevento Calcio,https://www.transfermarkt.com/benevento-calcio/startseite/verein/4171,Filippo Inzaghi,38,-35,33,27.4,14,1390000,50130000,1000000,11100000,-10100000,18,2020
+Juventus FC,https://www.transfermarkt.com/juventus-turin/startseite/verein/506,Massimiliano Allegri,30,21,59,27.0,14,22220000,555600000,63000000,126600000,-63600000,4,2021
+Inter Milan,https://www.transfermarkt.com/inter-mailand/startseite/verein/46,Simone Inzaghi,29,38,60,30.0,17,21160000,528900000,203550000,38000000,165550000,3,2021
+SSC Napoli,https://www.transfermarkt.com/ssc-neapel/startseite/verein/6195,Luciano Spalletti,30,31,63,27.2,18,19750000,493850000,3200000,22200000,-19000000,2,2021
+AC Milan,https://www.transfermarkt.com/ac-mailand/startseite/verein/5,Stefano Pioli,30,27,66,26.7,20,17780000,480100000,3500000,77600000,-74100000,1,2021
+Atalanta BC,https://www.transfermarkt.com/atalanta-bergamo/startseite/verein/800,Gian Piero Gasperini,29,20,51,27.2,18,15400000,384900000,40900000,69000000,-28100000,6,2021
+AS Roma,https://www.transfermarkt.com/as-rom/startseite/verein/12,José Mourinho,30,15,51,25.1,18,13190000,369350000,13520000,127150000,-113630000,5,2021
+SS Lazio,https://www.transfermarkt.com/lazio-rom/startseite/verein/398,Maurizio Sarri,30,13,49,27.4,19,10310000,267950000,7900000,13560000,-5660000,7,2021
+ACF Fiorentina,https://www.transfermarkt.com/ac-florenz/startseite/verein/430,Vincenzo Italiano,29,10,47,26.8,17,9480000,237000000,105950000,60700000,45250000,8,2021
+US Sassuolo,https://www.transfermarkt.com/us-sassuolo/startseite/verein/6574,Alessio Dionisi,30,6,43,26.3,16,8039999,233100000,25150000,34750000,-9600000,9,2021
+Torino FC,https://www.transfermarkt.com/fc-turin/startseite/verein/416,Ivan Juric,29,4,35,25.3,19,7620000,221080000,16500000,12600000,3900000,11,2021
+Bologna FC 1909,https://www.transfermarkt.com/fc-bologna/startseite/verein/1025,Sinisa Mihajlovic,29,-12,33,25.8,20,5030000,146000000,25600000,29410000,-3810000,13,2021
+Cagliari Calcio,https://www.transfermarkt.com/cagliari-calcio/startseite/verein/1390,Walter Mazzarri,30,-26,25,26.1,12,4760000,128550000,7700000,14400000,-6700000,17,2021
+Hellas Verona,https://www.transfermarkt.com/hellas-verona/startseite/verein/276,Igor Tudor,30,8,42,25.5,13,4840000,125830000,37700000,33500000,4200000,10,2021
+Genoa CFC,https://www.transfermarkt.com/genua-cfc/startseite/verein/252,Alexander Blessin,30,-24,22,25.5,16,3640000,112800000,21500000,37200000,-15700000,18,2021
+Udinese Calcio,https://www.transfermarkt.com/udinese-calcio/startseite/verein/410,Gabriele Cioffi,28,-10,30,26.5,20,4010000,104250000,72630000,9700000,62930000,14,2021
+UC Sampdoria,https://www.transfermarkt.com/sampdoria-genua/startseite/verein/1038,Marco Giampaolo,30,-12,29,28.1,11,3690000,95900000,7300000,15000000,-7700000,15,2021
+FC Empoli,https://www.transfermarkt.com/fc-empoli/startseite/verein/749,Aurelio Andreazzoli,30,-14,33,25.2,11,3250000,91100000,25900000,9800000,16100000,12,2021
+Venezia FC,https://www.transfermarkt.com/venezia-fc/startseite/verein/607,Paolo Zanetti,29,-29,22,26.3,21,2750000,82530000,200000,22090000,-21890000,19,2021
+Spezia Calcio,https://www.transfermarkt.com/spezia-calcio/startseite/verein/3522,Thiago Motta,30,-23,29,23.5,22,2300000,71300000,5700000,24300000,-18600000,16,2021
+US Salernitana 1919,https://www.transfermarkt.com/us-salernitana-1919/startseite/verein/380,Davide Nicola,28,-43,16,27.0,21,1570000,54850000,0,14350000,-14350000,20,2021
+Paris Saint-Germain,https://www.transfermarkt.com/fc-paris-saint-germain/startseite/verein/583,Thomas Tuchel,38,70,91,24.9,22,25900000,1010000000,114000000,227000000,-113000000,1,2018
+Olympique Lyon,https://www.transfermarkt.com/olympique-lyon/startseite/verein/1041,Bruno Génésio,38,23,72,23.7,16,13760000,467950000,90100000,46450000,43650000,3,2018
+AS Monaco,https://www.transfermarkt.com/as-monaco/startseite/verein/162,Leonardo Jardim,38,-19,36,23.4,34,6770000,385830000,332250000,145850000,186400000,17,2018
+LOSC Lille,https://www.transfermarkt.com/losc-lille/startseite/verein/1082,Christophe Galtier,38,35,75,23.7,24,8359999,267550000,69700000,8900000,60800000,2,2018
+Olympique Marseille,https://www.transfermarkt.com/olympique-marseille/startseite/verein/244,Rudi Garcia,38,8,61,26.1,16,7830000,258350000,32850000,66000000,-33150000,5,2018
+OGC Nice,https://www.transfermarkt.com/ogc-nizza/startseite/verein/417,Patrick Vieira,38,-5,56,22.7,16,4820000,183200000,61700000,28000000,33700000,7,2018
+FC Girondins Bordeaux,https://www.transfermarkt.com/fc-girondins-bordeaux/startseite/verein/40,Gustavo Poyet,38,-8,41,23.8,23,4160000,179000000,50700000,21390000,29310000,14,2018
+Stade Rennais FC,https://www.transfermarkt.com/fc-stade-rennes/startseite/verein/273,Sabri Lamouchi,38,3,52,23.8,17,4110000,168450000,18500000,18000000,500000,10,2018
+AS Saint-Étienne,https://www.transfermarkt.com/as-saint-etienne/startseite/verein/618,Jean-Louis Gasset,38,18,66,24.3,17,3130000,131250000,18700000,15000000,3700000,4,2018
+FC Nantes,https://www.transfermarkt.com/fc-nantes/startseite/verein/995,Miguel Cardoso,38,0,48,24.6,27,2990000,119500000,22200000,14350000,7850000,12,2018
+FC Toulouse,https://www.transfermarkt.com/fc-toulouse/startseite/verein/415,Alain Casanova,38,-22,38,24.1,19,2830000,113250000,35500000,18450000,17050000,16,2018
+Montpellier HSC,https://www.transfermarkt.com/montpellier-hsc/startseite/verein/969,Michel Der Zakarian,38,11,59,25.7,15,3430000,109850000,25500000,10150000,15350000,6,2018
+RC Strasbourg Alsace,https://www.transfermarkt.com/rc-strassburg-alsace/startseite/verein/667,Thierry Laurey,38,10,49,25.2,14,2970000,98000000,14000000,15750000,-1750000,11,2018
+Nîmes Olympique,https://www.transfermarkt.com/nimes-olympique/startseite/verein/1160,Bernard Blaquart,38,-1,53,25.0,14,2840000,88150000,0,3150000,-3150000,9,2018
+Stade Reims,https://www.transfermarkt.com/stade-reims/startseite/verein/1421,David Guion,38,-3,55,24.5,22,2350000,86950000,11000000,15500000,-4500000,8,2018
+SCO Angers,https://www.transfermarkt.com/sco-angers/startseite/verein/1420,Stéphane Moulin,38,-5,46,26.5,16,2100000,79700000,21000000,4450000,16550000,13,2018
+EA Guingamp,https://www.transfermarkt.com/ea-guingamp/startseite/verein/855,Antoine Kombouaré,38,-40,27,25.3,15,1910000,70650000,4000000,3500000,500000,20,2018
+Amiens SC,https://www.transfermarkt.com/amiens-sc/startseite/verein/1416,Christophe Pélissier,38,-21,38,25.4,18,1960000,70500000,10000000,7490000,2510000,15,2018
+SM Caen,https://www.transfermarkt.com/sm-caen/startseite/verein/1162,Fabien Mercadal,38,-25,33,24.8,20,1730000,67550000,14500000,9950000,4550000,19,2018
+Dijon FCO,https://www.transfermarkt.com/dijon-fco/startseite/verein/2969,Olivier Dall'Oglio,38,-29,34,25.7,18,2060000,65800000,4000000,9200000,-5200000,18,2018
+Paris Saint-Germain,https://www.transfermarkt.com/fc-paris-saint-germain/startseite/verein/583,Thomas Tuchel,27,51,68,25.2,24,24980000,874150000,105900000,95000000,10900000,1,2019
+Olympique Lyon,https://www.transfermarkt.com/olympique-lyon/startseite/verein/1041,Sylvinho,28,15,40,24.0,20,11650000,384550000,158320000,126000000,32320000,7,2019
+AS Monaco,https://www.transfermarkt.com/as-monaco/startseite/verein/162,Leonardo Jardim,28,0,40,25.3,27,8490000,331030000,83750000,200000000,-116250000,9,2019
+LOSC Lille,https://www.transfermarkt.com/losc-lille/startseite/verein/1082,Christophe Galtier,28,8,49,23.7,21,7990000,247780000,151000000,99000000,52000000,4,2019
+Olympique Marseille,https://www.transfermarkt.com/olympique-marseille/startseite/verein/244,André Villas-Boas,28,12,56,24.3,11,6360000,216150000,27250000,27000000,250000,2,2019
+OGC Nice,https://www.transfermarkt.com/ogc-nizza/startseite/verein/417,Patrick Vieira,28,3,41,23.1,17,4690000,173450000,23110000,52200000,-29090000,6,2019
+Stade Rennais FC,https://www.transfermarkt.com/fc-stade-rennes/startseite/verein/273,Julien Stéphan,28,14,50,25.0,16,5210000,171880000,54500000,58100000,-3600000,3,2019
+FC Girondins Bordeaux,https://www.transfermarkt.com/fc-girondins-bordeaux/startseite/verein/40,Paulo Sousa,28,6,37,25.0,19,4040000,125350000,52250000,17000000,35250000,12,2019
+FC Nantes,https://www.transfermarkt.com/fc-nantes/startseite/verein/995,Vahid Halilhodzic,28,-3,37,25.0,19,3030000,106150000,38500000,18750000,19750000,13,2019
+AS Saint-Étienne,https://www.transfermarkt.com/as-saint-etienne/startseite/verein/618,Ghislain Printant,28,-16,30,24.8,15,2560000,104830000,45850000,13000000,32850000,17,2019
+RC Strasbourg Alsace,https://www.transfermarkt.com/rc-strassburg-alsace/startseite/verein/667,Thierry Laurey,27,0,38,25.7,14,2940000,91130000,21500000,11000000,10500000,10,2019
+SCO Angers,https://www.transfermarkt.com/sco-angers/startseite/verein/1420,Stéphane Moulin,28,-5,39,25.9,12,2890000,89480000,34000000,10400000,23600000,11,2019
+Montpellier HSC,https://www.transfermarkt.com/montpellier-hsc/startseite/verein/969,Michel Der Zakarian,28,1,40,26.2,14,2720000,81680000,40000000,20300000,19700000,8,2019
+Stade Reims,https://www.transfermarkt.com/stade-reims/startseite/verein/1421,David Guion,28,5,41,23.7,21,2630000,81680000,26600000,18700000,7900000,5,2019
+FC Toulouse,https://www.transfermarkt.com/fc-toulouse/startseite/verein/415,Alain Casanova,28,-36,13,23.5,12,2049999,71880000,17150000,14000000,3150000,20,2019
+Amiens SC,https://www.transfermarkt.com/amiens-sc/startseite/verein/1416,Luka Elsner,28,-19,23,25.3,20,1670000,61930000,5440000,18150000,-12710000,19,2019
+FC Metz,https://www.transfermarkt.com/fc-metz/startseite/verein/347,Vincent Hognon,28,-8,34,24.4,21,1690000,54100000,2600000,14350000,-11750000,15,2019
+Dijon FCO,https://www.transfermarkt.com/dijon-fco/startseite/verein/2969,Stéphane Jobard,28,-10,30,25.3,19,1620000,50230000,24500000,10500000,14000000,16,2019
+Nîmes Olympique,https://www.transfermarkt.com/nimes-olympique/startseite/verein/1160,Bernard Blaquart,28,-15,27,23.8,12,1420000,49650000,20500000,9850000,10650000,18,2019
+Stade Brestois 29,https://www.transfermarkt.com/stade-brest-29/startseite/verein/3911,Olivier Dall'Oglio,28,-3,34,26.0,8,1710000,47780000,500000,7500000,-7000000,14,2019
+Paris Saint-Germain,https://www.transfermarkt.com/fc-paris-saint-germain/startseite/verein/583,Thomas Tuchel,38,58,82,24.2,28,19630000,805000000,400000,62000000,-61600000,2,2020
+Olympique Lyon,https://www.transfermarkt.com/olympique-lyon/startseite/verein/1041,Rudi Garcia,38,38,76,24.2,28,10780000,431350000,50600000,33250000,17350000,4,2020
+AS Monaco,https://www.transfermarkt.com/as-monaco/startseite/verein/162,Niko Kovac,38,34,78,24.0,18,11220000,370350000,12730000,52700000,-39970000,3,2020
+LOSC Lille,https://www.transfermarkt.com/losc-lille/startseite/verein/1082,Christophe Galtier,38,41,83,23.6,20,10100000,323200000,104180000,40430000,63750000,1,2020
+Stade Rennais FC,https://www.transfermarkt.com/fc-stade-rennes/startseite/verein/273,Julien Stéphan,38,12,58,24.2,13,8039999,297500000,55420000,70560000,-15140000,6,2020
+Olympique Marseille,https://www.transfermarkt.com/olympique-marseille/startseite/verein/244,André Villas-Boas,38,7,60,24.2,19,5850000,251400000,32049999,16930000,15119999,5,2020
+OGC Nice,https://www.transfermarkt.com/ogc-nizza/startseite/verein/417,Patrick Vieira,38,-3,52,22.4,16,5760000,236100000,20110000,29230000,-9120000,9,2020
+AS Saint-Étienne,https://www.transfermarkt.com/as-saint-etienne/startseite/verein/618,Claude Puel,38,-12,46,23.6,16,3590000,154500000,44100000,5600000,38500000,11,2020
+Montpellier HSC,https://www.transfermarkt.com/montpellier-hsc/startseite/verein/969,Michel Der Zakarian,38,-2,54,25.2,13,3350000,113850000,0,13100000,-13100000,8,2020
+SCO Angers,https://www.transfermarkt.com/sco-angers/startseite/verein/1420,Stéphane Moulin,38,-18,44,25.8,17,2940000,111650000,10700000,11250000,-550000,13,2020
+RC Strasbourg Alsace,https://www.transfermarkt.com/rc-strassburg-alsace/startseite/verein/667,Thierry Laurey,38,-9,42,25.2,18,3230000,109650000,500000,12000000,-11500000,15,2020
+FC Girondins Bordeaux,https://www.transfermarkt.com/fc-girondins-bordeaux/startseite/verein/40,Paulo Sousa,38,-14,45,25.4,18,2940000,105700000,17000000,0,17000000,12,2020
+Stade Reims,https://www.transfermarkt.com/stade-reims/startseite/verein/1421,David Guion,38,-8,42,23.1,25,3090000,105180000,17000000,11200000,5800000,14,2020
+RC Lens,https://www.transfermarkt.com/rc-lens/startseite/verein/826,Franck Haise,38,1,57,24.9,16,2900000,104300000,0,19000000,-19000000,7,2020
+FC Metz,https://www.transfermarkt.com/fc-metz/startseite/verein/347,Vincent Hognon,38,-4,47,24.6,25,2960000,103500000,10000000,14700000,-4700000,10,2020
+Stade Brestois 29,https://www.transfermarkt.com/stade-brest-29/startseite/verein/3911,Olivier Dall'Oglio,38,-16,41,25.2,9,3230000,103230000,12000000,16100000,-4100000,17,2020
+FC Nantes,https://www.transfermarkt.com/fc-nantes/startseite/verein/995,Christian Gourcuff,38,-8,40,25.4,15,2960000,94750000,2000000,5000000,-3000000,18,2020
+FC Lorient,https://www.transfermarkt.com/fc-lorient/startseite/verein/1158,Christophe Pélissier,38,-18,42,26.4,14,2140000,72880000,6500000,26500000,-20000000,16,2020
+Dijon FCO,https://www.transfermarkt.com/dijon-fco/startseite/verein/2969,Stéphane Jobard,38,-48,21,24.3,25,1770000,65629999,17000000,15800000,1200000,20,2020
+Nîmes Olympique,https://www.transfermarkt.com/nimes-olympique/startseite/verein/1160,Jérôme Arpinon,38,-31,35,24.9,18,1680000,60400000,2500000,11250000,-8750000,19,2020
+Paris Saint-Germain,https://www.transfermarkt.com/fc-paris-saint-germain/startseite/verein/583,Sergio Ramos,29,32,65,25.6,24,25990000,909550000,11000000,89500000,-78500000,1,2021
+AS Monaco,https://www.transfermarkt.com/as-monaco/startseite/verein/162,Philippe Clement,29,13,44,24.4,16,12580000,352200000,34750000,45500000,-10750000,7,2021
+Olympique Lyon,https://www.transfermarkt.com/olympique-lyon/startseite/verein/1041,Peter Bosz,29,3,42,24.6,14,11710000,316050000,95600000,22920000,72680000,10,2021
+Olympique Marseille,https://www.transfermarkt.com/olympique-marseille/startseite/verein/244,Jorge Sampaoli,29,18,53,24.0,17,8940000,250350000,7500000,47120000,-39620000,2,2021
+LOSC Lille,https://www.transfermarkt.com/losc-lille/startseite/verein/1082,Sven Botman,29,3,46,25.7,17,10880000,239300000,75360000,20000000,55360000,6,2021
+OGC Nice,https://www.transfermarkt.com/ogc-nizza/startseite/verein/417,Christophe Galtier,29,16,50,24.0,17,8810000,237950000,25100000,55000000,-29900000,4,2021
+Stade Rennais FC,https://www.transfermarkt.com/fc-stade-rennes/startseite/verein/273,Bruno Génésio,29,35,52,23.7,10,8340000,216900000,45650000,79500000,-33850000,3,2021
+RC Lens,https://www.transfermarkt.com/rc-lens/startseite/verein/826,Franck Haise,29,6,44,25.3,15,4550000,113700000,18000000,20600000,-2600000,8,2021
+AS Saint-Étienne,https://www.transfermarkt.com/as-saint-etienne/startseite/verein/618,Pascal Dupraz,29,-22,27,25.0,15,3560000,106900000,0,600000,-600000,18,2021
+Stade Reims,https://www.transfermarkt.com/stade-reims/startseite/verein/1421,Óscar García,29,1,36,23.7,21,3300000,99000000,15050000,16000000,-950000,12,2021
+Montpellier HSC,https://www.transfermarkt.com/montpellier-hsc/startseite/verein/969,Olivier Dall'Oglio,29,3,41,24.8,11,3940000,98550000,25000000,200000,24800000,11,2021
+RC Strasbourg Alsace,https://www.transfermarkt.com/rc-strassburg-alsace/startseite/verein/667,Julien Stéphan,29,18,48,26.1,9,3980000,95400000,16000000,4500000,11500000,5,2021
+FC Nantes,https://www.transfermarkt.com/fc-nantes/startseite/verein/995,Antoine Kombouaré,29,5,42,26.0,12,3440000,89500000,15800000,7500000,8300000,9,2021
+FC Metz,https://www.transfermarkt.com/fc-metz/startseite/verein/347,Frédéric Antonetti,29,-26,23,25.7,17,3040000,88200000,21500000,2500000,19000000,19,2021
+FC Girondins Bordeaux,https://www.transfermarkt.com/fc-girondins-bordeaux/startseite/verein/40,David Guion,29,-32,22,25.1,17,2840000,87950000,17860000,9800000,8060000,20,2021
+Stade Brestois 29,https://www.transfermarkt.com/stade-brest-29/startseite/verein/3911,Michel Der Zakarian,29,-7,35,25.5,8,2960000,76850000,28200000,9500000,18700000,13,2021
+SCO Angers,https://www.transfermarkt.com/sco-angers/startseite/verein/1420,Gérald Baticle,29,-9,32,26.2,13,2440000,61050000,18100000,1800000,16300000,14,2021
+ESTAC Troyes,https://www.transfermarkt.com/es-troyes-ac/startseite/verein/1095,Bruno Irles,29,-15,29,26.2,17,1800000,55750000,0,21800000,-21800000,15,2021
+FC Lorient,https://www.transfermarkt.com/fc-lorient/startseite/verein/1158,Christophe Pélissier,29,-19,28,25.6,10,1960000,52800000,10000000,10500000,-500000,16,2021
+Clermont Foot 63,https://www.transfermarkt.com/clermont-foot-63/startseite/verein/3524,Pascal Gastien,29,-23,28,26.0,15,1580000,42650000,0,0,0,17,2021
