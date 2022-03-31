@@ -1,4 +1,4 @@
-name,year,games,goals_scored,goals_concede,clean_sheet,assists,yellow,second_yellow,red,mins
+player_name,season,games,goals_scored,goals_concede,clean_sheet,assists,yellow,second_yellow,red,mins
 Jack Grealish,2018,35,6,0,0,8,5,0,0,3031
 Jack Grealish,2019,41,10,0,0,8,8,0,0,3550
 Jack Grealish,2020,27,7,0,0,12,5,0,0,2275
