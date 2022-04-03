@@ -53,7 +53,8 @@ def get_summaries(articles_df, n_workers, model, summary_pickle_path):
         articles_df = ddf.compute()
     
     # Summarization may not have went well, in this case, we use the article snippet!
-    articles_df.loc[articles_df["summary"].isna(), "summary"] = articles_df.loc[articles_df["summary"].isna(), "article_snippet"]  
+    articles_df.loc[articles_df["summary"] == '', "summary"] = articles_df.loc[articles_df["summary"] == '', "article_snippet"]
+    articles_df.loc[articles_df["summary"].isna(), "summary"] = articles_df.loc[articles_df["summary"].isna(), "article_snippet"] 
     articles_df.to_pickle(summary_pickle_path)
     
     print("We have generated summaries for our articles!")
@@ -82,11 +83,15 @@ def get_entities(articles_df, n_workers, model, ner_pickle_path):
     # helper to get entities and their counts for each article
     def get_ner(text, model):
         res = defaultdict(set)
-        ner_result = model(text)
-        pairs = map(lambda entity_dict: (entity_dict['entity_group'], entity_dict['word']), ner_result)
-        for ent_label, ent_name in pairs:
-            if ent_label in ('ORG', 'PER'):
-                res[ent_label].add(ent_name)
+        try:
+            ner_result = model(text)
+            pairs = map(lambda entity_dict: (entity_dict['entity_group'], entity_dict['word']), ner_result)
+            for ent_label, ent_name in pairs:
+                if ent_label in ('ORG', 'PER'):
+                    res[ent_label].add(ent_name)
+        except Exception as e:
+            print(e)
+            pass
         return res
     
     ddf = dd.from_pandas(articles_df, npartitions=n_workers)

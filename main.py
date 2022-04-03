@@ -123,23 +123,20 @@ if __name__ == "__main__":
         
     # Check GPU here, and caveat about speed.
     if torch.cuda.is_available():
-        print("We are using GPU for the NLP pipeline!")
         gpu_string = ",".join(map(str, args.gpus))
         os.environ["CUDA_VISIBLE_DEVICES"]=gpu_string
+        print(f"We are using GPU {gpu_string} for the NLP pipeline!")
         torch.cuda.empty_cache()
     else:
         print("We are CPU for the NLP pipeline, which can be very slow. Consider using a GPU server.")
             
     # We now proceed with the NER pipeline, introducing models used for the NER pipeline:
     # Summarization -> Sentiments of summary -> NER of summary -> BERT-embeddings of summary
-    summarizer_model = SBertSummarizer('paraphrase-MiniLM-L6-v2')
-    sentiment_pipe = pipeline("sentiment-analysis", truncation=True)
-    ner_pipe = pipeline("ner", aggregation_strategy='max')
-    embeddings_model = SentenceTransformer('all-MiniLM-L6-v2')
     
     # Generating summaries:
     summary_pickle_path = f'data/majorleagues_{args.startyear}{args.endyear}_summaries.pkl'
     if not os.path.exists(summary_pickle_path):
+        summarizer_model = SBertSummarizer('paraphrase-MiniLM-L6-v2')
         articles_df = get_summaries(articles_df, args.n_workers, summarizer_model, summary_pickle_path)
     else:
         print('We already have the article summaries for the required players.')
@@ -148,7 +145,8 @@ if __name__ == "__main__":
     # Generating sentiments:
     sentiments_pickle_path = f'data/majorleagues_{args.startyear}{args.endyear}_sentiments.pkl'
     if not os.path.exists(sentiments_pickle_path):
-        articles_df = get_summaries(articles_df, args.n_workers, sentiment_pipe, sentiments_pickle_path)
+        sentiment_pipe = pipeline("sentiment-analysis", truncation=True)
+        articles_df = get_sentiments(articles_df, args.n_workers, sentiment_pipe, sentiments_pickle_path)
     else:
         print('We already have the sentiments for the required articles.')
         articles_df = pd.read_pickle(sentiments_pickle_path)
@@ -156,6 +154,7 @@ if __name__ == "__main__":
     # Generating entities:
     ner_pickle_path = f'data/majorleagues_{args.startyear}{args.endyear}_entities.pkl'
     if not os.path.exists(ner_pickle_path):
+        ner_pipe = pipeline("ner", aggregation_strategy='max')
         articles_df = get_entities(articles_df, args.n_workers, ner_pipe, ner_pickle_path)
     else:
         print('We already have the entities for the required articles.')
@@ -164,6 +163,7 @@ if __name__ == "__main__":
     # Generating embeddings:
     embed_pickle_path = f'data/majorleagues_{args.startyear}{args.endyear}_embed.pkl'
     if not os.path.exists(embed_pickle_path):
+        embeddings_model = SentenceTransformer('all-MiniLM-L6-v2')
         articles_df = get_embeddings(articles_df, embeddings_model, embed_pickle_path)
     else:
         print('We already have generated the embeddings for the articles.')
@@ -174,10 +174,9 @@ if __name__ == "__main__":
     
     # ablation using both sets of information:
     # https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7826718/pdf/entropy-23-00090.pdf
-    # focus on writing the damned report
     # pseudo-algo, difficulties, CSS, resolutions.
     # Understanding how to use silas for ablation studies
-    # ER diagram, wordclouds, visualizations, REFCV, correlation matrix.
+    # wordclouds, visualizations, REFCV, correlation matrix.
     
     # IF GOT TIME:
     # talk about inference, how to predict for new teams.
