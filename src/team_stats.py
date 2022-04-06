@@ -17,7 +17,7 @@ import validators
 import warnings
 warnings.filterwarnings("ignore")
 
-from utils import format_currency, format_text
+from src.utils import format_currency, format_text
 
 ###############################################
 # Getting Team-Level Statistics

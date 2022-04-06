@@ -24,7 +24,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
 
-from utils import format_currency, format_text
+from src.utils import format_currency, format_text
 
 ###########################################
 # Getting Player Historical Market Values:

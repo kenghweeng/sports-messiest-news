@@ -1,5 +1,10 @@
 .DS_Store
-data/.ipynb_checkpoints/*
+
+# Checkpoints
 .ipynb_checkpoints/*
-__pycache__/*
 legacy/.ipynb_checkpoints/*
+data/.ipynb_checkpoints/*
+
+# Cache dirs
+__pycache__/*
+src/__pycache__/*

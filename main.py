@@ -16,13 +16,13 @@ from summarizer.sbert import SBertSummarizer
 from transformers import pipeline
 
 # Our own modules:
-from players import get_players_per_year, prepare_league_players
-from players_values import get_players_values
-from players_stats import get_players_stats
-from team_stats import get_team_stats
-from players_articles import get_all_forum_transfers, get_news_articles
-from nlp_pipeline import get_summaries, get_sentiments, get_entities, get_embeddings
-from utils import *
+from src.players import get_players_per_year, prepare_league_players
+from src.players_values import get_players_values
+from src.players_stats import get_players_stats
+from src.team_stats import get_team_stats
+from src.players_articles import get_all_forum_transfers, get_news_articles
+from src.nlp_pipeline import get_summaries, get_sentiments, get_entities, get_embeddings
+from src.utils import *
 
 # Helper used in the main logic below.
 def enrich_names(articles_df, names_df, articles_names_csv_path):

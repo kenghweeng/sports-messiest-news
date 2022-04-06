@@ -21,7 +21,7 @@ import warnings
 warnings.filterwarnings("ignore")
 tqdm.pandas()
 
-from utils import format_currency, format_text
+from src.utils import format_currency, format_text
 
 #################################################################################################################
 # Getting all news articles links:
