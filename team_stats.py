@@ -44,8 +44,8 @@ def get_team_stats(league_links, teamstats_csv_path, startyear, endyear, headers
     # Below is the helper function to get every team's statistics PER league in the league_links list, in a given year
     def get_stats_per_team(league_url, year):
         teams_list = []
-        league_url = urlparse(league_url)._replace(query=f"saison_id={year}").geturl()
-        year_html = requests.get(league_url, headers=headers)
+        year_url = urlparse(league_url)._replace(query=f"saison_id={year}").geturl()
+        year_html = requests.get(year_url, headers=headers)
         year_soup = BeautifulSoup(year_html.content)
         # we look at the team ranking belonging to a specific league and specific year.
         year_ranking_soup = year_soup.select('.tab-print > .box > .grid-view > .items > tbody')[0].find_all('td')

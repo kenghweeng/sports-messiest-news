@@ -24,8 +24,18 @@ from players_articles import get_all_forum_transfers, get_news_articles
 from nlp_pipeline import get_summaries, get_sentiments, get_entities, get_embeddings
 from utils import *
 
-# Write combine dataframe logics here.
+# Helper used in the main logic below.
 def enrich_names(articles_df, names_df, articles_names_csv_path):
+    """This function is used to reconcile player names in names_df with player IDs with articles collected.
+
+    Args:
+        articles_df (pd.DataFrame): dataframe collecting features relating to articles, and contains player IDs only
+        names_df (pd.DataFrame): dataframe relating to player IDs and names
+        articles_names_csv_path (str): file path to save merged dataframe to.
+
+    Returns:
+        _type_: _description_
+    """
     names_df.drop_duplicates(inplace=True) # drop duplicate name/ID pairs
     
     articles_df_names = articles_df.merge(names_df, on='player_id', how='inner')
@@ -37,6 +47,98 @@ def enrich_names(articles_df, names_df, articles_names_csv_path):
     articles_df_names.loc[articles_df_names["name_found"] == False, "article_text"] = articles_df_names.loc[articles_df_names["name_found"] == False, "article_snippet"]
     articles_df_names.to_csv(articles_names_csv_path, index=False)
     return articles_df_names
+
+# Important function used to combine all sources of info into a unified dataframe!
+def combine_all_dataframes(combined_pkl_path, articles_df, player_df, values_df, playerstats_df, teamstats_df):
+    """The purpose of this function is to basically merge all relevant information into a single source of data
+    
+    Args:
+        combined_pkl_path (str): where to pickle the unified dataframe to.
+        articles_df (pd.DataFrame): dataframe containing information on transfer news-articles
+        player_df (pd.DataFrame): dataframe containing information on player metadata
+        values_df (pd.DataFrame): dataframe containing information on player market values
+        playerstats_df (pd.DataFrame): dataframe containing information on player historical league statistics
+        teamstats_df (pd.DataFrame): dataframe containing information on club statistics in speciifed leagues
+
+    Returns:
+        pd.DataFrame: merged dataframe containing all of the goodness as above
+    """
+    # Merging articles with player_metadata:
+    player_df = player_df[["player_id", "player_height", "player_foot", "position"]]
+    player_df.drop_duplicates(subset=['player_id'], inplace=True) 
+    articles_df = articles_df.merge(player_df, on=["player_id"], how='left') # contains player's metadata
+
+    # Merging articles with player statistics:
+    playerstats_df.drop_duplicates(subset=["player_name", "season"], inplace=True)
+    articles_df = articles_df.merge(playerstats_df, on=["player_name", "season"], how='left') # we now have enriched with player stats
+
+    # Merging articles with team statistics:
+    # each article has 2 teams involved, we first merge with the source club.
+    articles_df["team_id"] = articles_df["club_from"].str.split('/').str[-1].astype('int')
+    team_id_pattern = r"(.*?)/verein/(\d+)/.*" # get team ID
+    teamstats_df["team_id"] = teamstats_df["team_url"].str.extract(team_id_pattern, flags=re.I, expand=False)[1].astype('int')
+    # teamstats_df["team_id"] = teamstats_df["team_url"].str.split('/').str[-1].astype('int')
+    articles_df = articles_df.merge(teamstats_df, on=["season", "team_id"], how='left')
+
+    # we now merge with the destination club's statistics
+    articles_df["team_to_id"] = articles_df["club_to"].str.split('/').str[-1].astype('int')
+    teamstats_df.rename(columns={"team_id": "team_to_id"}, inplace=True)
+    articles_df = articles_df.merge(teamstats_df, on=["season", "team_to_id"], how='left', suffixes=('_src', '_dst'))
+    print(f'There are {articles_df[articles_df["team_rank_src"].isna() | articles_df["team_rank_dst"].isna()].shape[0]} articles which did not involve major leagues, and we will remove these.')
+    articles_df = articles_df.dropna(subset=['team_rank_src', 'team_rank_dst'])
+
+    # we finally merge with the market values of players, before the merge we need to make sure both dataframes are sorted based on datetime.
+    values_df["date"] = pd.to_datetime(values_df["date"])
+    # sort the dates of values ascendingly within each player group
+    values_df = values_df.sort_values(["player_name", "date"]).groupby("player_name").head(100) # sort the dates of values ascendingly within each player group
+    articles_df = articles_df.sort_values(by=["player_name", "article_date"]).groupby("player_name").head(100)
+    articles_df["article_date"] = pd.to_datetime(articles_df["article_date"])
+
+    combined = pd.DataFrame()
+
+    for player_name, player_group in articles_df.groupby("player_name"):
+        player_market_vals = values_df[values_df["player_name"] == player_name]
+        res_df = pd.merge_asof(player_group, player_market_vals, left_on='article_date', right_on='date', direction='backward')
+        combined = combined.append(res_df, ignore_index=True)
+
+    combined.dropna(subset=["market_value"], inplace=True)
+    combined["market_value"] = combined["market_value"].apply(format_currency)
+    combined = combined.reset_index(drop=True)
+    embeddings = list(combined["article_embeddings"].values)
+    combined.drop("article_embeddings", axis=1, inplace=True)
+    embeddings = pd.DataFrame(embeddings, columns=[f'bert_embedding_{i}' for i in range(len(embeddings[0]))])
+    combined = pd.concat([combined, embeddings], axis=1)
+    combined["label"] = combined["transfer_str"].replace({"Transfer failed": 0, "Done deal": 1})
+    
+    # Removing columns which have duplicate info
+    combined = combined.drop([
+            'transfer_str',
+            'player_id',
+            'club_from',
+            'club_to',
+            'article_link',
+            'article_snippet',
+            'article_text',
+            'player_name_x',
+            'entities',
+            'team_id',
+            'team_manager_src',
+            'team_url_src',
+            'team_to_id',
+            'team_manager_dst',
+            'team_url_dst',
+            'player_name_y',
+            'date',
+            'player_club'], axis=1)
+    
+    combined["season"] = combined["season"].astype("object")
+    # Randomly shuffle the rows
+    combined = combined.sample(frac=1)
+    combined = combined.reset_index(drop=True)
+    
+    combined.to_pickle(combined_pkl_path)
+    print(f'We have pickled the combined dataframe at {combined_pkl_path}!')
+    return combined
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -71,7 +173,7 @@ if __name__ == "__main__":
         player_df = pd.read_csv(player_csv_path)
     
     # Getting market values for the major league players.
-    marketvalue_csv_path = f'data/majorleagues_{args.startyear}{args.endyear}_values.csv'
+    marketvalue_csv_path = f'data/majorleagues_{args.startyear-1}{args.endyear}_values.csv'
     if not os.path.exists(marketvalue_csv_path):
         values_df = get_players_values(player_df, marketvalue_csv_path)
     else:
@@ -101,7 +203,6 @@ if __name__ == "__main__":
     else:
         print('We already have all of our forum links for the required players.')
         forum_df = pd.read_pickle(forum_links_pickle_path)
-    print(forum_df.shape)
     
     # Getting all English articles from the required players.
     articles_csv_path = f'data/majorleagues_{args.startyear}{args.endyear}_articles.csv'
@@ -128,7 +229,7 @@ if __name__ == "__main__":
         print(f"We are using GPU {gpu_string} for the NLP pipeline!")
         torch.cuda.empty_cache()
     else:
-        print("We are CPU for the NLP pipeline, which can be very slow. Consider using a GPU server.")
+        print("We are using CPU for the NLP pipeline, which can be very slow. Consider using a GPU server.")
             
     # We now proceed with the NER pipeline, introducing models used for the NER pipeline:
     # Summarization -> Sentiments of summary -> NER of summary -> BERT-embeddings of summary
@@ -169,16 +270,20 @@ if __name__ == "__main__":
         print('We already have generated the embeddings for the articles.')
         articles_df = pd.read_pickle(embed_pickle_path)
     
+    # Final step: creating the soccer transfer-news dataset!
+    combined_pkl_path = f'data/majorleagues_{args.startyear}{args.endyear}_combined.pkl'
+    if not os.path.exists(combined_pkl_path):
+        combined = combine_all_dataframes(combined_pkl_path, articles_df, player_df, values_df, \
+                                            playerstats_df, teamstats_df)
+    else:
+        print('We have previously generated the combined soccer transfer-news dataset!')
+        combined = pd.read_pickle(combined_pkl_path)
     
-    # Combine all relevant dataframes to form final df
+    print(f'We have a total of {combined.shape[0]} articles and a total of {combined.shape[1]} enriched columns in our transfer-news dataset.')
     
     # ablation using both sets of information:
-    # https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7826718/pdf/entropy-23-00090.pdf
-    # pseudo-algo, difficulties, CSS, resolutions.
     # Understanding how to use silas for ablation studies
     # wordclouds, visualizations, REFCV, correlation matrix.
     
     # IF GOT TIME:
     # talk about inference, how to predict for new teams.
-    
-    
