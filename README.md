@@ -1,5 +1,5 @@
-An interesting foray into misinformation classification for soccer transfers in major European leagues.
-This repository uses `poetry` for dependencies management.
+## Sports' Messi-est News
+Literally since Messi is playing soccer. This project describes an interesting foray into misinformation classification for soccer transfers in major European leagues. This repository uses `poetry` for dependencies management.
 
 This work has two main contributions:
 * 1. Scalable web scraper for collection of transfer news-articles & relevant metadata from transfermarkt.com as well as running the NLP enrichment pipeline on the articles. Activate the poetry environment and run the `main.py` script with an input config file: `config.ini`. Note that the `config.ini` file provides the user with customisation on what years to scrape for, what teams to scrape for, and 
