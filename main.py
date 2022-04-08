@@ -49,7 +49,7 @@ def enrich_names(articles_df, names_df, articles_names_csv_path):
     return articles_df_names
 
 # Important function used to combine all sources of info into a unified dataframe!
-def combine_all_dataframes(combined_pkl_path, articles_df, player_df, values_df, playerstats_df, teamstats_df):
+def combine_all_dataframes(combined_pkl_path, articles_df, player_df, playerstats_df, values_df, teamstats_df):
     """The purpose of this function is to basically merge all relevant information into a single source of data
     
     Args:
@@ -273,8 +273,8 @@ if __name__ == "__main__":
     # Final step: creating the soccer transfer-news dataset!
     combined_pkl_path = f'data/majorleagues_{args.startyear}{args.endyear}_combined.pkl'
     if not os.path.exists(combined_pkl_path):
-        combined = combine_all_dataframes(combined_pkl_path, articles_df, player_df, values_df, \
-                                            playerstats_df, teamstats_df)
+        combined = combine_all_dataframes(combined_pkl_path, articles_df, player_df, playerstats_df, \
+                                             values_df, teamstats_df)
     else:
         print('We have previously generated the combined soccer transfer-news dataset!')
         combined = pd.read_pickle(combined_pkl_path)
