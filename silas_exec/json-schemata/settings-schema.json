@@ -1,0 +1,117 @@
+{
+    "$id": "https://www.depintel.com/documentation/json-schemata/settings-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Machine Learning Settings",
+    "type": "object",
+    "required": [ "metadata-file", "output-feature", "ignored-features", "learner-settings", "training-dataset", "validation-settings" ],
+    "properties": {
+        "metadata-file": { "type": "string" },         
+        "output-feature": { "type": "string" }, 
+        "ignored-features": {
+            "type": "array",
+            "items": { "type": "string" }
+        }, 
+        "learner-settings": { 
+            "type": "object",
+            "oneOf": [
+                {
+                    "required": [ "mode", "reduction-strategy", "grower-settings" ],
+                    "properties": {
+                        "mode": { "type": "string" },
+                        "reduction-strategy": { "type": "string" }  ,
+                        "grower-settings": {
+                            "type": "object",
+                            "required": [ "forest-settings", "tree-settings" ],
+                            "properties": {
+                                "forest-settings": {
+                                    "type": "object",
+                                    "required": [ "type", "number-of-trees", "sampling-proportion", "oob-proportion" ],
+                                    "properties": {
+                                        "type": { "type": "string" },
+                                        "number-of-trees": {
+                                            "type": "integer",
+                                            "minimum": 0
+                                        }, 
+                                        "sampling-proportion": {
+                                            "type": "number",
+                                            "minimum": 0.0,
+                                            "maximum": 1.0
+                                        },
+                                        "oob-proportion": {
+                                            "type": "number",
+                                            "minimum": 0.0,
+                                            "maximum": 1.0
+                                        }
+                                    }
+                                },
+                                "tree-settings": {
+                                    "type": "object",
+                                    "required": [ "type", "max-depth", "desired-leaf-size", "feature-proportion" ],
+                                    "properties": {
+                                        "type": { "type": "string" },
+                                        "max-depth": {
+                                            "type": "integer",
+                                            "minimum": 0     
+                                        }, 
+                                        "desired-leaf-size": {
+                                            "type": "integer",
+                                            "minimum": 0     
+                                        }, 
+                                        "feature-proportion": {
+                                            "oneOf": [
+                                                {
+                                                    "type": "number",
+                                                    "minimum": 0.0,
+                                                    "maximum": 1.0
+                                                },
+                                                {
+                                                    "enum": ["sqrt", "log", "log2", "golden"]
+                                                }   
+                                            ]                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }                      
+                    }
+                }
+            ]            
+        },           
+        "training-dataset": { "$ref": "#/definitions/dataset-file" },  
+        "validation-type": { "enum": ["TT", "CV"] },                          
+        "validation-settings": {
+            "type": "object",
+            "oneOf": [
+                {
+                    "properties": {
+                        "type": { "enum": ["TT"] },
+                        "testing-dataset": { "$ref": "#/definitions/dataset-file" }
+                    }
+                },
+                {
+                    "properties": {
+                        "type": { "enum": ["CV"] },                        
+                        "number-of-runs": {
+                            "type": "integer",
+                            "minimum": 0
+                        }, 
+                        "number-of-cross-validation-partitions": {
+                            "type": "integer",
+                            "minimum": 0
+                        }
+                    }
+                }
+            ]                      
+        }
+    },
+    "definitions": {
+        "dataset-file" : {
+            "type": "object",
+            "required": [ "type", "path" ],
+            "properties": {
+                "type": { "type": "string" },
+                "path": { "type": "string" }
+            }
+        }
+    }
+}

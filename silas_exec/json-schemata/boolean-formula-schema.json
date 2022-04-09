@@ -1,0 +1,56 @@
+{
+    "$id": "https://www.depintel.com/documentation/json-schemata/boolean-formula-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Boolean Formula",    
+    "type": "object",
+    "definitions": {
+        "formula": {
+            "type": "object",
+            "oneOf": [
+                {
+                    "required": [ "type", "value" ],
+                    "properties": {
+                        "type": { "enum": [ "BooleanConstant" ] },
+                        "value": "bool"
+                    }
+                },
+                {
+                    "required": [ "type", "name", "subset" ],
+                    "properties": {
+                        "type": { "enum": [ "Membership" ] },
+                        "name": "string",
+                        "subset": {
+                            "type": "array",
+                            "items": { "type": "string" }
+                        }
+                    }
+                },
+                {
+                    "required": [ "type", "left", "right" ],
+                    "properties": {
+                        "type": { "enum": [ "=", ">", ">=", "<", "<=" ] },
+                        "left": { "$ref": "arithmetic-term-schema.json#/definitions/term" },
+                        "right": { "$ref": "arithmetic-term-schema.json#/definitions/term" }
+                    }
+                },
+                {
+                    "required": [ "type", "internal" ],
+                    "properties": {
+                        "type": { "enum": [ "!" ] },
+                        "internal": { "$ref": "#definitions/formula" }
+                    }
+                },
+                {
+                    "required": [ "type", "operands" ],
+                    "properties": {
+                        "type": { "enum": [ "&&", "=>", "||", "Xor" ] },
+                        "operands": { 
+                            "type": "array",
+                            "items": { "$ref": "#definitions/formula" }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

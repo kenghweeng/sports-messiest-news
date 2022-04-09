@@ -1,0 +1,35 @@
+{
+    "$id": "https://www.depintel.com/documentation/json-schemata/metadata-settings-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Metadata Settings",
+    "required": [ "missing-value-place-holders", "attribute-settings" ],
+    "type": "object",
+    "properties": {
+        "missing-value-place-holders": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "attribute-settings": {
+            "type": "array",
+            "items": { 
+                "type": "object",                
+                "oneOf": [
+                    {
+                        "required": [ "name", "type" ],
+                        "properties": {
+                            "name": { "type": "string" },
+                            "type": { "enum": [ "nominal" ] }
+                        }
+                    },
+                    {
+                        "required": [ "name", "type" ],
+                        "properties": {
+                            "name": { "type": "string" },
+                            "type": { "enum": [ "numerical" ] }
+                        }
+                    }
+                ]                
+            }
+        }
+    }
+}

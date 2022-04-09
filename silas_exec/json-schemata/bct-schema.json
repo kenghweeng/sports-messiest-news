@@ -1,0 +1,31 @@
+{
+   "$id": "https://www.depintel.com/documentation/json-schemata/bct-schema.json",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "title": "Binary classification tree",    
+   "required": [ "predicate", "left", "right" ],
+   "type": "object",
+   "properties": {
+      "predicate": { "$ref": "boolean-formula-schema.json#/definitions/formula" },
+      "left": { "$ref": "#/definitions/subtree" },
+      "right": { "$ref": "#/definitions/subtree" }
+   },
+   "definitions": {
+      "subtree": {
+         "type": "object",
+         "oneOf": [
+            {
+               "$ref": "#"
+            },
+            {
+               "required": [ "aggregate" ],
+               "properties": {
+                  "aggregate": { 
+                     "type": "array",
+                     "items": { "type": "number" }
+                  }            
+               }
+            }  
+         ]
+      }
+   }
+}

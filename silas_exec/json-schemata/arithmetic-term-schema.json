@@ -1,0 +1,44 @@
+{
+    "$id": "https://www.depintel.com/documentation/json-schemata/arithmetic-term-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Arithmetic Term",    
+    "type": "object",
+    "definitions": {
+        "term": {
+            "type": "object",        
+            "oneOf": [
+                {
+                    "required": [ "type", "value" ],
+                    "properties": {
+                        "type": { "enum": [ "ArithmeticConstant" ] },
+                        "value": "number"
+                    }
+                },
+                {
+                    "required": [ "type", "name" ],
+                    "properties": {
+                        "type": { "enum": [ "ArithmeticVariable" ] },
+                        "name": "string"
+                    }
+                },
+                {
+                    "required": [ "type", "internal" ],
+                    "properties": {
+                        "type": { "enum": [ "Negative", "Square" ] },
+                        "internal": { "$ref": "#/definitions/term" }
+                    }
+                },
+                {
+                    "required": [ "type", "operands" ],
+                    "properties": {
+                        "type": { "enum": [ "*", "+", "-", "/" ] },
+                        "operands": { 
+                            "type": "array",
+                            "items": { "$ref": "#/definitions/term" }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

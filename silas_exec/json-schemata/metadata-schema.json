@@ -1,0 +1,61 @@
+{
+    "$id": "https://www.depintel.com/documentation/json-schemata/metadata-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Metadata",
+    "required": [ "attributes", "features" ],
+    "type": "object",
+    "properties": {
+        "attributes": {
+            "type": "array",
+            "items": { 
+                "type": "object",
+                "oneOf": [
+                    {
+                        "required": [ "type", "name", "data-type", "bounds" ],
+                        "properties": {
+                            "type": { "enum": ["numerical"] },
+                            "name": { "type": "string" },
+                            "data-type": { "enum": ["bool", "u8", "u16", "u32", "u64", "i8", "i16", "i32", "i64", "f32", "f64"] },
+                            "bounds": {
+                                "type": "object",
+                                "required": [ "min", "max" ],
+                                "properties": {
+                                    "min": { "type": "number" },
+                                    "max": { "type": "number" }
+                                }
+                            }           
+                        }
+                    },
+                    {
+                        "required": [ "type", "name", "data-type", "ordered", "values" ],
+                        "properties": {
+                            "type": { "enum": ["nominal"] },
+                            "name": { "type": "string" },
+                            "data-type": { "enum": ["bool", "u8", "u16", "u32", "u64"] },
+                            "ordered": { "type": "boolean"},
+                            "values": {
+                                "type": "array",
+                                "items": { "type": "string" }
+                            }      
+                        }
+                    }
+                ]                
+            }
+        },
+        "features": {
+            "type": "array",
+            "items": { 
+                "type": "object",
+                "required": [ "feature-name", "attribute-name" ],
+                "properties": {
+                    "feature-name": {
+                        "type": "string"
+                    },
+                    "attribute-name": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

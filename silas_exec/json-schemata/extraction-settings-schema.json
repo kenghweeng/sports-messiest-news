@@ -1,0 +1,32 @@
+{
+    "$id": "https://www.depintel.com/documentation/json-schemata/extraction-settings-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Silas Insight Formula Extraction Settings",
+    "type": "object",
+    "required": [ "tree_sampling", "branch_sampling", "node_sampling" ],
+    "properties": {
+        "tree_sampling": {
+                "$ref": "#/definitions/sample_method"
+        },
+        "branch_sampling": {
+            "$ref": "#/definitions/sample_method"
+        },
+        "node_sampling": {
+            "$ref": "#/definitions/sample_method"
+        }        
+    },
+    "definitions" : {
+        "sample_method": {
+            "type": "object",
+            "required": [ "method", "proportion" ],
+            "properties": {
+                "method": { "enum": [ "uniform", "best", "worst" ] },
+                "proportion": {                        
+                    "type": "number",
+                    "minimum": 0.0,
+                    "maximum": 1.0 
+                }
+            }            
+        }
+    }
+}

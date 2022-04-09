@@ -1,0 +1,1378 @@
+{
+    "missing-value-place-holders": [
+        "",
+        "NA",
+        "na",
+        " ",
+        "?",
+        "*",
+        "NaN",
+        "nan",
+        "NULL",
+        "Null",
+        "null",
+        "."
+    ],
+    "attribute-settings": [
+        {
+            "name": "sentiment_score",
+            "type": "numerical"
+        },
+        {
+            "name": "people_count",
+            "type": "numerical"
+        },
+        {
+            "name": "player_height",
+            "type": "numerical"
+        },
+        {
+            "name": "games",
+            "type": "numerical"
+        },
+        {
+            "name": "goals_concede",
+            "type": "numerical"
+        },
+        {
+            "name": "clean_sheet",
+            "type": "numerical"
+        },
+        {
+            "name": "assists",
+            "type": "numerical"
+        },
+        {
+            "name": "yellow",
+            "type": "numerical"
+        },
+        {
+            "name": "second_yellow",
+            "type": "numerical"
+        },
+        {
+            "name": "red",
+            "type": "numerical"
+        },
+        {
+            "name": "mins",
+            "type": "numerical"
+        },
+        {
+            "name": "team_league_matches_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_league_pd_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_league_pts_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_foreigners_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_avg_val_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_total_val_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_transfer_expense_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_transfer_net_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_rank_src",
+            "type": "numerical"
+        },
+        {
+            "name": "team_league_matches_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_league_pts_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_avg_age_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_foreigners_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_avg_val_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_total_val_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_transfer_income_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_transfer_expense_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_transfer_net_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "team_rank_dst",
+            "type": "numerical"
+        },
+        {
+            "name": "market_value",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_0",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_3",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_4",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_5",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_6",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_7",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_8",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_9",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_10",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_12",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_13",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_15",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_16",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_17",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_19",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_20",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_21",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_22",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_24",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_25",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_26",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_27",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_28",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_29",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_30",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_31",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_32",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_33",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_34",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_36",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_37",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_38",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_39",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_40",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_41",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_42",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_43",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_45",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_46",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_47",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_49",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_50",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_51",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_52",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_54",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_55",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_57",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_58",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_60",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_62",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_63",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_64",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_65",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_66",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_67",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_68",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_69",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_70",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_71",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_72",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_73",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_74",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_75",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_76",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_77",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_78",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_81",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_82",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_84",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_85",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_86",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_88",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_89",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_90",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_91",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_92",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_94",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_96",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_97",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_98",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_99",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_100",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_101",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_102",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_103",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_104",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_105",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_106",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_108",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_110",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_112",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_113",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_115",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_117",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_118",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_119",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_120",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_122",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_123",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_124",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_125",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_126",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_127",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_128",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_132",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_133",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_134",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_136",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_137",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_138",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_139",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_141",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_145",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_146",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_147",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_149",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_150",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_151",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_153",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_155",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_156",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_157",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_158",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_159",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_160",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_164",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_165",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_166",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_168",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_170",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_171",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_172",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_173",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_174",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_175",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_176",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_177",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_179",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_180",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_181",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_182",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_187",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_188",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_189",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_190",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_191",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_192",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_193",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_194",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_197",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_198",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_199",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_201",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_202",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_203",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_204",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_205",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_206",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_207",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_208",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_210",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_211",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_212",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_213",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_214",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_215",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_218",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_223",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_224",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_225",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_228",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_229",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_230",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_231",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_232",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_234",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_235",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_236",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_237",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_238",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_240",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_241",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_244",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_245",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_246",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_248",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_249",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_250",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_252",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_253",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_254",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_255",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_257",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_258",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_259",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_260",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_262",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_264",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_265",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_266",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_267",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_268",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_269",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_270",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_271",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_272",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_273",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_275",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_277",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_278",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_279",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_280",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_281",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_282",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_283",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_284",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_285",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_288",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_289",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_290",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_291",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_292",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_293",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_294",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_295",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_296",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_297",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_298",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_299",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_300",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_301",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_302",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_303",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_304",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_305",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_307",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_308",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_309",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_310",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_311",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_314",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_315",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_316",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_317",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_319",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_321",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_322",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_323",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_324",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_325",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_327",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_328",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_329",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_330",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_331",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_332",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_333",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_334",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_335",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_336",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_339",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_340",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_341",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_343",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_345",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_346",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_347",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_348",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_349",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_350",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_351",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_352",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_353",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_354",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_355",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_356",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_357",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_359",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_361",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_364",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_365",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_367",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_368",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_369",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_370",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_371",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_374",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_375",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_376",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_377",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_378",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_379",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_380",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_381",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_382",
+            "type": "numerical"
+        },
+        {
+            "name": "bert_embedding_383",
+            "type": "numerical"
+        },
+        {
+            "name": "season_2020",
+            "type": "numerical"
+        },
+        {
+            "name": "season_2021",
+            "type": "numerical"
+        },
+        {
+            "name": "player_foot_right",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Central Midfield",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Centre-Back",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Defensive Midfield",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Goalkeeper",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Left Winger",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Right Midfield",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Right Winger",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Right-Back",
+            "type": "numerical"
+        },
+        {
+            "name": "position_Second Striker",
+            "type": "numerical"
+        },
+        {
+            "name": "label",
+            "type": "numerical"
+        }
+    ]
+}

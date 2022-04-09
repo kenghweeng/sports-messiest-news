@@ -1,0 +1,75 @@
+{
+    "$id": "https://www.depintel.com/documentation/json-schemata/feature-type-stats-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Feature Type Stats",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "oneOf": [
+            {
+                "required": [ "feature_name", "type", "number_of_missing_values", "number_stats", "number_distribution" ],
+                "properties": {
+                    "feature_name": { "type": "string" },
+                    "type": { "enum": [ "continuous"] },
+                    "number_of_missing_values": {
+                        "type": "integer",
+                        "minimum": 0          
+                    },
+                    "number_stats": {
+                        "type": "object",
+                        "required": [ "min", "max", "mean" ],
+                        "properties": {
+                            "min": { "type": "number" },
+                            "max": { "type": "number" },
+                            "mean": { "type": "number" }
+                        }
+                    },                    
+                    "number_distribution": {
+                        "type": "array",
+                        "items": { "type": "number" }
+                    }
+                }
+            },
+            {
+                "required": [ "feature_name", "type", "number_of_missing_values", "nominal_stats", "nominal_distribution" ],
+                "properties": {
+                    "feature_name": { "type": "string" },
+                    "type": { "enum": [ "discrete" ] },
+                    "number_of_missing_values": {
+                        "type": "integer",
+                        "minimum": 0          
+                    },                
+                    "nominal_stats": {
+                        "type": "object",
+                        "required": [ "most_common_value", "least_common_value", "mean_count" ],
+                        "properties": {
+                            "most_common_value": { "$ref": "#/definitions/bucket" },
+                            "least_common_value": { "$ref": "#/definitions/bucket" },
+                            "mean_count": {
+                                "type": "integer",
+                                "minimum": 0 
+                            }
+                        }
+                    },
+                    "nominal_distribution": {
+                        "type": "array",
+                        "items": { "$ref": "#/definitions/bucket" }
+                    }
+                }
+            }
+        ]  
+    },
+    "definitions": {
+        "bucket" : {
+            "type": "object",
+            "required": [ "value", "occurrence" ],
+            "properties": {
+                "value": { "type": "string" },
+                "occurrence": {
+                    "type": "integer",
+                    "minimum": 0 
+                }
+            }
+        }
+    }
+}

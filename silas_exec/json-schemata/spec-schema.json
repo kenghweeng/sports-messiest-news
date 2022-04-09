@@ -1,0 +1,15 @@
+{
+    "$id": "https://www.depintel.com/documentation/json-schemata/spec-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "User Specifications",
+    "type": "array",
+    "items": { 
+        "required": [ "name", "outcome", "constraint_formula" ],
+        "type": "object",
+        "properties": {
+            "name": { "type": "string" },
+            "outcome": { "type": "string" },
+            "constraint_formula": { "$ref": "boolean-formula-schema.json#/definitions/formula" }
+        }
+    }
+}
