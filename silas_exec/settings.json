@@ -27,6 +27,6 @@
     "validation-settings": {
         "type": "CV",
         "number-of-runs": 1,
-        "number-of-partitions": 5
+        "number-of-partitions": 10
     }
 }
