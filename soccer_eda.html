@@ -14612,12 +14612,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[258]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
@@ -14687,30 +14687,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14729,7 +14705,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[267]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing the dataframe</span>
@@ -14749,7 +14725,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[268]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Doing some simple preprocessing:</span>
@@ -14773,7 +14749,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[269]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Getting value counts basically:</span>
@@ -15235,11 +15211,12 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[271]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">import</span> <span class="nn">pickle</span> 
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;label&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">]</span>
@@ -15255,9 +15232,8 @@ jp-needs-light-background
 <span class="n">X_test_vals</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_test_vals</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">X_test</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">X_test</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 
-<span class="c1"># Saving standardized features to train and test CSVs</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;test.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;train.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">sc</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;scaler.pkl&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">))</span>
+<span class="n">sc</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;scaler.pkl&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15270,7 +15246,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[275]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1"># we have 438 columns currently</span>
@@ -15321,7 +15297,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[272]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[114]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
@@ -15337,6 +15313,9 @@ jp-needs-light-background
 <span class="n">optimized_columns</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">selector</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
 <span class="n">X_train_final</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[</span><span class="n">optimized_columns</span><span class="p">]</span>
 <span class="n">X_test_final</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">[</span><span class="n">optimized_columns</span><span class="p">]</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X_test_final</span><span class="p">,</span> <span class="n">y_test</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;silas_exec/data/test.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X_train_final</span><span class="p">,</span> <span class="n">y_train</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;silas_exec/data/train.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15358,8 +15337,8 @@ jp-needs-light-background
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>CPU times: user 15min 16s, sys: 2min 31s, total: 17min 47s
-Wall time: 2min 15s
+<pre>CPU times: user 16min 4s, sys: 2min 54s, total: 18min 58s
+Wall time: 2min 25s
 </pre>
 </div>
 </div>
@@ -15373,7 +15352,7 @@ Wall time: 2min 15s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[274]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[115]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train_final</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1"># we see that we have reduced the number of columns to 339</span>
@@ -15426,7 +15405,7 @@ Wall time: 2min 15s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[294]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[103]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
@@ -15459,7 +15438,7 @@ Wall time: 2min 15s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[295]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[104]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;These are scores for 5-fold cross validation:&quot;</span><span class="p">)</span>
@@ -15506,10 +15485,10 @@ The 5-fold CV average score for Multi-Layer Perceptrons is: 0.8502867383512545
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[283]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[110]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">classification_report</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">roc_auc_score</span>
 
 <span class="n">lr_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_final</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">dt_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_final</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
@@ -15528,14 +15507,11 @@ The 5-fold CV average score for Multi-Layer Perceptrons is: 0.8502867383512545
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Accuracy score on test-set for Multi-Layer Perceptrons: </span><span class="si">{</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">mlp_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=================================&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;These are the F1 scores on the test-set&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 score on test-set for Logistic Regression: </span><span class="si">{</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">lr_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 score on test-set for Decision Tree: </span><span class="si">{</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">dt_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 score on test-set for Random Forest: </span><span class="si">{</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">rf_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 score on test-set for Multi-Layer Perceptrons: </span><span class="si">{</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">mlp_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># print(&quot;=================================&quot;)</span>
-<span class="c1"># print(classification_report(y_test, rf_pred))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;These are the AUROC scores on the test-set&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AUROC score on test-set for Logistic Regression: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">lr_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AUROC score on test-set for Decision Tree: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">dt_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AUROC score on test-set for Random Forest: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">rf_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AUROC score on test-set for Multi-Layer Perceptrons: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">mlp_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15559,15 +15535,15 @@ The 5-fold CV average score for Multi-Layer Perceptrons is: 0.8502867383512545
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>These are the accuracy scores on the test-set
 Accuracy score on test-set for Logistic Regression: 0.8502024291497976
-Accuracy score on test-set for Decision Tree: 0.8016194331983806
-Accuracy score on test-set for Random Forest: 0.8582995951417004
-Accuracy score on test-set for Multi-Layer Perceptrons: 0.902834008097166
+Accuracy score on test-set for Decision Tree: 0.7773279352226721
+Accuracy score on test-set for Random Forest: 0.8623481781376519
+Accuracy score on test-set for Multi-Layer Perceptrons: 0.8947368421052632
 =================================
-These are the F1 scores on the test-set
-F1 score on test-set for Logistic Regression: 0.8710801393728222
-F1 score on test-set for Decision Tree: 0.8304498269896193
-F1 score on test-set for Random Forest: 0.8754448398576512
-F1 score on test-set for Multi-Layer Perceptrons: 0.9166666666666666
+These are the AUROC scores on the test-set
+AUROC score on test-set for Logistic Regression: 0.8425680159256802
+AUROC score on test-set for Decision Tree: 0.7679163901791639
+AUROC score on test-set for Random Forest: 0.856204379562044
+AUROC score on test-set for Multi-Layer Perceptrons: 0.8880889183808892
 </pre>
 </div>
 </div>
@@ -15595,7 +15571,7 @@ F1 score on test-set for Multi-Layer Perceptrons: 0.9166666666666666
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[298]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">X_train_final</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="s1">&#39;bert_embedding&#39;</span> <span class="ow">in</span> <span class="n">col</span><span class="p">]</span>
@@ -15626,7 +15602,7 @@ F1 score on test-set for Multi-Layer Perceptrons: 0.9166666666666666
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[299]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[112]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Note that these serve as baselines and we used either defaults or sensible hyper-parameters</span>
@@ -15665,11 +15641,11 @@ F1 score on test-set for Multi-Layer Perceptrons: 0.9166666666666666
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Accuracy score on test-set for Multi-Layer Perceptrons: </span><span class="si">{</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">mlp_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=================================&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;These are the F1 scores on the test-set </span><span class="se">\033</span><span class="s2">[91m WITH TEXT FEATURES ONLY: </span><span class="se">\033</span><span class="s2">[0m&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 score on test-set for Logistic Regression: </span><span class="si">{</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">lr_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 score on test-set for Decision Tree: </span><span class="si">{</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">dt_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 score on test-set for Random Forest: </span><span class="si">{</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">rf_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F1 score on test-set for Multi-Layer Perceptrons: </span><span class="si">{</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">mlp_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;These are the AUROC scores on the test-set </span><span class="se">\033</span><span class="s2">[91m WITH TEXT FEATURES ONLY: </span><span class="se">\033</span><span class="s2">[0m&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AUROC score on test-set for Logistic Regression: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">lr_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AUROC score on test-set for Decision Tree: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">dt_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AUROC score on test-set for Random Forest: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">rf_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AUROC score on test-set for Multi-Layer Perceptrons: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">mlp_pred</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15703,11 +15679,11 @@ Accuracy score on test-set for Decision Tree: 0.7611336032388664
 Accuracy score on test-set for Random Forest: 0.8785425101214575
 Accuracy score on test-set for Multi-Layer Perceptrons: 0.8663967611336032
 =================================
-These are the F1 scores on the test-set <span class="ansi-red-intense-fg"> WITH TEXT FEATURES ONLY: </span>
-F1 score on test-set for Logistic Regression: 0.8439716312056738
-F1 score on test-set for Decision Tree: 0.7885304659498208
-F1 score on test-set for Random Forest: 0.8958333333333334
-F1 score on test-set for Multi-Layer Perceptrons: 0.8833922261484098
+These are the AUROC scores on the test-set <span class="ansi-red-intense-fg"> WITH TEXT FEATURES ONLY: </span>
+AUROC score on test-set for Logistic Regression: 0.8161247511612475
+AUROC score on test-set for Decision Tree: 0.7560053085600531
+AUROC score on test-set for Random Forest: 0.8708029197080293
+AUROC score on test-set for Multi-Layer Perceptrons: 0.8607498341074984
 </pre>
 </div>
 </div>
@@ -15725,7 +15701,18 @@ F1 score on test-set for Multi-Layer Perceptrons: 0.8833922261484098
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
 <p><a id='part34'></a></p>
-<h3 id="Section-3.4:-Using-Silas-for-Comparisons:">Section 3.4: Using Silas for Comparisons:<a class="anchor-link" href="#Section-3.4:-Using-Silas-for-Comparisons:">&#182;</a></h3>
+<h2 id="Section-3.4:-Using-Silas-for-Comparisons:">Section 3.4: Using Silas for Comparisons:<a class="anchor-link" href="#Section-3.4:-Using-Silas-for-Comparisons:">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Cross-Validation-for-a-Silas-Model-with-all-features-(both-text-and-entity-related-features)">Cross-Validation for a Silas Model with all features (both text and entity-related features)<a class="anchor-link" href="#Cross-Validation-for-a-Silas-Model-with-all-features-(both-text-and-entity-related-features)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15734,10 +15721,53 @@ F1 score on test-set for Multi-Layer Perceptrons: 0.8833922261484098
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[301]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[117]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>silas
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cd</span> <span class="n">silas_exec</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>/Users/kenghweeng/messiest_news/silas_exec
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[118]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>silas gen-metadata-settings -o metadata-settings.json data/train.csv
+<span class="o">!</span>silas gen-metadata -o metadata.json metadata-settings.json data/train.csv
+<span class="o">!</span>silas sanitise -c new -n mean metadata-settings.json feature-stats.json metadata.json data/train.csv
+<span class="o">!</span>silas gen-settings -o settings.json -v cv clean-metadata.json data/clean-train.csv
+<span class="o">!</span>silas learn -o model/all_clf settings.json
 </pre></div>
 
      </div>
@@ -15773,8 +15803,882 @@ All rights reserved.
 
 -&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
 
-A subcommand is required
-Run with --help for more information.
+[02:35:09] Generating metadata settings...
+[02:35:09] Probing file: <span class="ansi-blue-fg">&#34;data/train.csv&#34;</span>
+[02:35:09] Writing metadata settings into: <span class="ansi-blue-fg">&#34;metadata-settings.json&#34;</span>
+[02:35:09] Done.
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:35:09] Reading metadata settings from: <span class="ansi-blue-fg">&#34;metadata-settings.json&#34;</span>
+[02:35:09] Generating metadata ...
+[02:35:09] Verifying dataset headers...
+[02:35:09] Reading data from files...
+[02:35:09] Creating json objects...
+[02:35:09] Writing dataset statistics and metadata in: <span class="ansi-blue-fg">the current directory</span>
+[02:35:09] Done.
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:35:10] Starting files sanitation...
+[02:35:10] Sanitised datafile has been saved: <span class="ansi-blue-fg">data/clean-train.csv</span>
+[02:35:10] New metadata file has been saved: <span class="ansi-blue-fg">clean-metadata.json</span>
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:35:10] Generating machine learning settings ...
+[02:35:10] Writing main settings in: <span class="ansi-blue-fg">settings.json</span>
+[02:35:10] Done.
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:35:10] Settings has been read from: <span class="ansi-blue-fg">settings.json</span>
+[02:35:10] Metadata has been read from: <span class="ansi-blue-fg">clean-metadata.json</span>
+[02:35:10] Validation method:<span class="ansi-green-fg"> cross validation</span>
+[02:35:10] 1396 training instances have been loaded from: <span class="ansi-blue-fg">data/clean-train.csv</span>
+[02:35:10] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">1</span> ──
+[02:35:10] Timer(growing classifier) starts.
+[02:35:11] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:11] Timer(growing classifier) stops. Time elapsed: 131 (ms.)
+[02:35:11] Computing performance on hold-out data instances...
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:11]          0<span class="ansi-green-fg">    53    </span><span class="ansi-red-fg">    6     </span><span class="ansi-yellow-fg"> 0.898305 </span><span class="ansi-yellow-fg"> 0.967776 </span>
+[02:35:11]          1<span class="ansi-green-fg">    67    </span><span class="ansi-red-fg">    14    </span><span class="ansi-yellow-fg"> 0.827160 </span><span class="ansi-yellow-fg"> 0.967776 </span>
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]                       Overall     
+[02:35:11]           Accuracy<span class="ansi-green-fg">    0.857143    </span>
+[02:35:11]         (M)ROC-AUC<span class="ansi-green-fg">    0.967776    </span>
+[02:35:11] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">2</span> ──
+[02:35:11] Timer(growing classifier) starts.
+[02:35:11] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:11] Timer(growing classifier) stops. Time elapsed: 128 (ms.)
+[02:35:11] Computing performance on hold-out data instances...
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:11]          0<span class="ansi-green-fg">    61    </span><span class="ansi-red-fg">    4     </span><span class="ansi-yellow-fg"> 0.938462 </span><span class="ansi-yellow-fg"> 0.966769 </span>
+[02:35:11]          1<span class="ansi-green-fg">    62    </span><span class="ansi-red-fg">    13    </span><span class="ansi-yellow-fg"> 0.826667 </span><span class="ansi-yellow-fg"> 0.966769 </span>
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]                       Overall     
+[02:35:11]           Accuracy<span class="ansi-green-fg">    0.878571    </span>
+[02:35:11]         (M)ROC-AUC<span class="ansi-green-fg">    0.966769    </span>
+[02:35:11] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">3</span> ──
+[02:35:11] Timer(growing classifier) starts.
+[02:35:11] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:11] Timer(growing classifier) stops. Time elapsed: 125 (ms.)
+[02:35:11] Computing performance on hold-out data instances...
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:11]          0<span class="ansi-green-fg">    50    </span><span class="ansi-red-fg">    7     </span><span class="ansi-yellow-fg"> 0.877193 </span><span class="ansi-yellow-fg"> 0.972522 </span>
+[02:35:11]          1<span class="ansi-green-fg">    78    </span><span class="ansi-red-fg">    5     </span><span class="ansi-yellow-fg"> 0.939759 </span><span class="ansi-yellow-fg"> 0.972522 </span>
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]                       Overall     
+[02:35:11]           Accuracy<span class="ansi-green-fg">    0.914286    </span>
+[02:35:11]         (M)ROC-AUC<span class="ansi-green-fg">    0.972522    </span>
+[02:35:11] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">4</span> ──
+[02:35:11] Timer(growing classifier) starts.
+[02:35:11] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:11] Timer(growing classifier) stops. Time elapsed: 131 (ms.)
+[02:35:11] Computing performance on hold-out data instances...
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:11]          0<span class="ansi-green-fg">    56    </span><span class="ansi-red-fg">    6     </span><span class="ansi-yellow-fg"> 0.903226 </span><span class="ansi-yellow-fg"> 0.969603 </span>
+[02:35:11]          1<span class="ansi-green-fg">    73    </span><span class="ansi-red-fg">    5     </span><span class="ansi-yellow-fg"> 0.935897 </span><span class="ansi-yellow-fg"> 0.969603 </span>
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]                       Overall     
+[02:35:11]           Accuracy<span class="ansi-green-fg">    0.921429    </span>
+[02:35:11]         (M)ROC-AUC<span class="ansi-green-fg">    0.969603    </span>
+[02:35:11] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">5</span> ──
+[02:35:11] Timer(growing classifier) starts.
+[02:35:11] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:11] Timer(growing classifier) stops. Time elapsed: 125 (ms.)
+[02:35:11] Computing performance on hold-out data instances...
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:11]          0<span class="ansi-green-fg">    72    </span><span class="ansi-red-fg">    3     </span><span class="ansi-yellow-fg"> 0.960000 </span><span class="ansi-yellow-fg"> 0.964308 </span>
+[02:35:11]          1<span class="ansi-green-fg">    55    </span><span class="ansi-red-fg">    10    </span><span class="ansi-yellow-fg"> 0.846154 </span><span class="ansi-yellow-fg"> 0.964308 </span>
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]                       Overall     
+[02:35:11]           Accuracy<span class="ansi-green-fg">    0.907143    </span>
+[02:35:11]         (M)ROC-AUC<span class="ansi-green-fg">    0.964308    </span>
+[02:35:11] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">6</span> ──
+[02:35:11] Timer(growing classifier) starts.
+[02:35:11] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:11] Timer(growing classifier) stops. Time elapsed: 150 (ms.)
+[02:35:11] Computing performance on hold-out data instances...
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:11]          0<span class="ansi-green-fg">    50    </span><span class="ansi-red-fg">    5     </span><span class="ansi-yellow-fg"> 0.909091 </span><span class="ansi-yellow-fg"> 0.962567 </span>
+[02:35:11]          1<span class="ansi-green-fg">    72    </span><span class="ansi-red-fg">    13    </span><span class="ansi-yellow-fg"> 0.847059 </span><span class="ansi-yellow-fg"> 0.962567 </span>
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]                       Overall     
+[02:35:11]           Accuracy<span class="ansi-green-fg">    0.871429    </span>
+[02:35:11]         (M)ROC-AUC<span class="ansi-green-fg">    0.962567    </span>
+[02:35:11] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">7</span> ──
+[02:35:11] Timer(growing classifier) starts.
+[02:35:11] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:11] Timer(growing classifier) stops. Time elapsed: 142 (ms.)
+[02:35:11] Computing performance on hold-out data instances...
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:11]          0<span class="ansi-green-fg">    54    </span><span class="ansi-red-fg">    5     </span><span class="ansi-yellow-fg"> 0.915254 </span><span class="ansi-yellow-fg"> 0.960033 </span>
+[02:35:11]          1<span class="ansi-green-fg">    71    </span><span class="ansi-red-fg">    10    </span><span class="ansi-yellow-fg"> 0.876543 </span><span class="ansi-yellow-fg"> 0.960033 </span>
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]                       Overall     
+[02:35:11]           Accuracy<span class="ansi-green-fg">    0.892857    </span>
+[02:35:11]         (M)ROC-AUC<span class="ansi-green-fg">    0.960033    </span>
+[02:35:11] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">8</span> ──
+[02:35:11] Timer(growing classifier) starts.
+[02:35:11] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:11] Timer(growing classifier) stops. Time elapsed: 133 (ms.)
+[02:35:11] Computing performance on hold-out data instances...
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:11]          0<span class="ansi-green-fg">    58    </span><span class="ansi-red-fg">    4     </span><span class="ansi-yellow-fg"> 0.935484 </span><span class="ansi-yellow-fg"> 0.961458 </span>
+[02:35:11]          1<span class="ansi-green-fg">    68    </span><span class="ansi-red-fg">    9     </span><span class="ansi-yellow-fg"> 0.883117 </span><span class="ansi-yellow-fg"> 0.961458 </span>
+[02:35:11]    ───────────────────────────────────────────────
+[02:35:11]                       Overall     
+[02:35:11]           Accuracy<span class="ansi-green-fg">    0.906475    </span>
+[02:35:11]         (M)ROC-AUC<span class="ansi-green-fg">    0.961458    </span>
+[02:35:11] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">9</span> ──
+[02:35:11] Timer(growing classifier) starts.
+[02:35:12] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:12] Timer(growing classifier) stops. Time elapsed: 143 (ms.)
+[02:35:12] Computing performance on hold-out data instances...
+[02:35:12]    ───────────────────────────────────────────────
+[02:35:12]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:12]          0<span class="ansi-green-fg">    56    </span><span class="ansi-red-fg">    6     </span><span class="ansi-yellow-fg"> 0.903226 </span><span class="ansi-yellow-fg"> 0.963762 </span>
+[02:35:12]          1<span class="ansi-green-fg">    66    </span><span class="ansi-red-fg">    11    </span><span class="ansi-yellow-fg"> 0.857143 </span><span class="ansi-yellow-fg"> 0.963762 </span>
+[02:35:12]    ───────────────────────────────────────────────
+[02:35:12]                       Overall     
+[02:35:12]           Accuracy<span class="ansi-green-fg">    0.877698    </span>
+[02:35:12]         (M)ROC-AUC<span class="ansi-green-fg">    0.963762    </span>
+[02:35:12] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">10</span> ──
+[02:35:12] Timer(growing classifier) starts.
+[02:35:12] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:12] Timer(growing classifier) stops. Time elapsed: 133 (ms.)
+[02:35:12] Computing performance on hold-out data instances...
+[02:35:12]    ───────────────────────────────────────────────
+[02:35:12]            Positive  Negative  Accuracy  ROC-AUC  
+[02:35:12]          0<span class="ansi-green-fg">    60    </span><span class="ansi-red-fg">    8     </span><span class="ansi-yellow-fg"> 0.882353 </span><span class="ansi-yellow-fg"> 0.959034 </span>
+[02:35:12]          1<span class="ansi-green-fg">    62    </span><span class="ansi-red-fg">    8     </span><span class="ansi-yellow-fg"> 0.885714 </span><span class="ansi-yellow-fg"> 0.959034 </span>
+[02:35:12]    ───────────────────────────────────────────────
+[02:35:12]                       Overall     
+[02:35:12]           Accuracy<span class="ansi-green-fg">    0.884058    </span>
+[02:35:12]         (M)ROC-AUC<span class="ansi-green-fg">    0.959034    </span>
+[02:35:12] 
+[02:35:12] ────────── Cross-validation results ──────────
+[02:35:12]   Average accuracy: <span class="ansi-green-fg">0.891109</span> ± <span class="ansi-green-fg">0.012870</span>
+[02:35:12] Average (M)ROC-AUC: <span class="ansi-green-fg">0.964783</span> ± <span class="ansi-green-fg">0.002685</span>
+[02:35:12] 
+[02:35:12] Building and saving an overall classifier...
+[02:35:12] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:35:12] Saving classifier to: <span class="ansi-blue-fg">model/all_clf</span>
+[02:35:12] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="We-then-proceed-to-do-predictions-on-our-test-set!">We then proceed to do predictions on our test-set!<a class="anchor-link" href="#We-then-proceed-to-do-predictions-on-our-test-set!">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>silas gen-all -o /Users/kenghweeng/messiest_news/silas_exec/ data/train.csv data/test.csv
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:03:14] Generating metadata settings...
+[02:03:14] Probing file: <span class="ansi-blue-fg">&#34;data/train.csv&#34;</span>
+[02:03:14] Generating metadata ...
+[02:03:14] Verifying dataset headers...
+[02:03:14] Reading data from files...
+[02:03:14] Creating json objects...
+[02:03:14] Generating machine learning settings ...
+[02:03:14] Writing main settings in: <span class="ansi-blue-fg">/Users/kenghweeng/messiest_news/silas_exec/settings.json</span>
+[02:03:14] All files are written in: <span class="ansi-blue-fg">/Users/kenghweeng/messiest_news/silas_exec/</span>
+[02:03:14] Done.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>silas learn -o model/all_clf settings.json
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:03:23] Settings has been read from: <span class="ansi-blue-fg">settings.json</span>
+[02:03:23] Metadata has been read from: <span class="ansi-blue-fg">metadata.json</span>
+[02:03:23] Validation method:<span class="ansi-green-fg"> testing sample.</span>
+[02:03:23] 1396 training instances have been loaded from: <span class="ansi-blue-fg">data/train.csv</span>
+[02:03:23] 247 testing instances have been loaded from: <span class="ansi-blue-fg">data/test.csv</span>
+[02:03:23] Timer(growing classifier) starts.
+[02:03:23] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:03:23] Timer(growing classifier) stops. Time elapsed: 136 (ms.)
+[02:03:23] Computing performance on testing data instances...
+[02:03:23]    ───────────────────────────────────────────────
+[02:03:23]            Positive  Negative  Accuracy  ROC-AUC  
+[02:03:23]          0<span class="ansi-green-fg">   104    </span><span class="ansi-red-fg">    6     </span><span class="ansi-yellow-fg"> 0.945455 </span><span class="ansi-yellow-fg"> 0.969210 </span>
+[02:03:23]          1<span class="ansi-green-fg">   124    </span><span class="ansi-red-fg">    13    </span><span class="ansi-yellow-fg"> 0.905109 </span><span class="ansi-yellow-fg"> 0.969210 </span>
+[02:03:23]    ───────────────────────────────────────────────
+[02:03:23]                       Overall     
+[02:03:23]           Accuracy<span class="ansi-green-fg">    0.923077    </span>
+[02:03:23]         (M)ROC-AUC<span class="ansi-green-fg">    0.969210    </span>
+[02:03:23] 
+[02:03:23] Saving classifier to: <span class="ansi-blue-fg">model/all_clf</span>
+[02:03:23] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>silas predict -o predictions.csv model/all_clf data/test.csv
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:04:00] Loading classifier from : <span class="ansi-blue-fg">model/all_clf</span>
+[02:04:00] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:04:00] Timer(Reading data file) starts.
+[02:04:00] Timer(Reading data file) stops. Time elapsed: 42 (ms.)
+[02:04:00] 247 instances to predict have been loaded from: <span class="ansi-blue-fg">data/test.csv</span>
+[02:04:00] Performing predictions...
+[02:04:00] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:04:00] Predictions have been saved to: <span class="ansi-blue-fg">predictions.csv</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Cross-Validation-for-a-Silas-Model-with-only-textual-features:">Cross-Validation for a Silas Model with only textual features:<a class="anchor-link" href="#Cross-Validation-for-a-Silas-Model-with-only-textual-features:">&#182;</a></h3><p>We need to remove previous artifacts, and also change our datasets to contain only <code>bert_embedding</code> and <code>label</code> columns</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[96]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/train.csv&quot;</span><span class="p">)</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/test.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Choosing only BERT embedding and label columns</span>
+<span class="n">text_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">train</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="s1">&#39;bert_embedding&#39;</span> <span class="ow">in</span> <span class="n">col</span><span class="p">]</span>
+<span class="n">text_cols</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">)</span>
+<span class="n">train</span> <span class="o">=</span> <span class="n">train</span><span class="p">[</span><span class="n">text_cols</span><span class="p">]</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="n">text_cols</span><span class="p">]</span>
+
+<span class="c1"># replace current data files with modified datasets.</span>
+<span class="n">train</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data/train.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data/test.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We then repeat the same silas commands for 5-fold cross-validation and predictions on test-set!</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>silas gen-metadata-settings -o metadata-settings.json data/train.csv
+<span class="o">!</span>silas gen-metadata -o metadata.json metadata-settings.json data/train.csv
+<span class="o">!</span>silas sanitise -c new -n mean metadata-settings.json feature-stats.json metadata.json data/train.csv
+<span class="o">!</span>silas gen-settings -o settings.json -v cv clean-metadata.json data/clean-train.csv
+<span class="o">!</span>silas learn -o model/all_clf settings.json
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:20:16] Generating metadata settings...
+[02:20:16] Probing file: <span class="ansi-blue-fg">&#34;data/train.csv&#34;</span>
+[02:20:16] Writing metadata settings into: <span class="ansi-blue-fg">&#34;metadata-settings.json&#34;</span>
+[02:20:16] Done.
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:20:16] Reading metadata settings from: <span class="ansi-blue-fg">&#34;metadata-settings.json&#34;</span>
+[02:20:16] Generating metadata ...
+[02:20:16] Verifying dataset headers...
+[02:20:16] Reading data from files...
+[02:20:16] Creating json objects...
+[02:20:16] Writing dataset statistics and metadata in: <span class="ansi-blue-fg">the current directory</span>
+[02:20:16] Done.
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:20:16] Starting files sanitation...
+[02:20:16] Sanitised datafile has been saved: <span class="ansi-blue-fg">data/clean-train.csv</span>
+[02:20:16] New metadata file has been saved: <span class="ansi-blue-fg">clean-metadata.json</span>
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:20:17] Generating machine learning settings ...
+[02:20:17] Writing main settings in: <span class="ansi-blue-fg">settings.json</span>
+[02:20:17] Done.
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:20:17] Settings has been read from: <span class="ansi-blue-fg">settings.json</span>
+[02:20:17] Metadata has been read from: <span class="ansi-blue-fg">clean-metadata.json</span>
+[02:20:17] Validation method:<span class="ansi-green-fg"> cross validation</span>
+[02:20:17] 1396 training instances have been loaded from: <span class="ansi-blue-fg">data/clean-train.csv</span>
+[02:20:17] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">1</span> ──
+[02:20:17] Timer(growing classifier) starts.
+[02:20:17] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:17] Timer(growing classifier) stops. Time elapsed: 156 (ms.)
+[02:20:17] Computing performance on hold-out data instances...
+[02:20:17]    ───────────────────────────────────────────────
+[02:20:17]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:17]          0<span class="ansi-green-fg">    48    </span><span class="ansi-red-fg">    9     </span><span class="ansi-yellow-fg"> 0.842105 </span><span class="ansi-yellow-fg"> 0.920313 </span>
+[02:20:17]          1<span class="ansi-green-fg">    68    </span><span class="ansi-red-fg">    15    </span><span class="ansi-yellow-fg"> 0.819277 </span><span class="ansi-yellow-fg"> 0.920313 </span>
+[02:20:17]    ───────────────────────────────────────────────
+[02:20:17]                       Overall     
+[02:20:17]           Accuracy<span class="ansi-green-fg">    0.828571    </span>
+[02:20:17]         (M)ROC-AUC<span class="ansi-green-fg">    0.920313    </span>
+[02:20:17] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">2</span> ──
+[02:20:17] Timer(growing classifier) starts.
+[02:20:17] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:17] Timer(growing classifier) stops. Time elapsed: 147 (ms.)
+[02:20:17] Computing performance on hold-out data instances...
+[02:20:17]    ───────────────────────────────────────────────
+[02:20:17]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:17]          0<span class="ansi-green-fg">    59    </span><span class="ansi-red-fg">    12    </span><span class="ansi-yellow-fg"> 0.830986 </span><span class="ansi-yellow-fg"> 0.929986 </span>
+[02:20:17]          1<span class="ansi-green-fg">    57    </span><span class="ansi-red-fg">    12    </span><span class="ansi-yellow-fg"> 0.826087 </span><span class="ansi-yellow-fg"> 0.929986 </span>
+[02:20:17]    ───────────────────────────────────────────────
+[02:20:17]                       Overall     
+[02:20:17]           Accuracy<span class="ansi-green-fg">    0.828571    </span>
+[02:20:17]         (M)ROC-AUC<span class="ansi-green-fg">    0.929986    </span>
+[02:20:17] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">3</span> ──
+[02:20:17] Timer(growing classifier) starts.
+[02:20:17] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:17] Timer(growing classifier) stops. Time elapsed: 152 (ms.)
+[02:20:17] Computing performance on hold-out data instances...
+[02:20:17]    ───────────────────────────────────────────────
+[02:20:17]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:17]          0<span class="ansi-green-fg">    45    </span><span class="ansi-red-fg">    12    </span><span class="ansi-yellow-fg"> 0.789474 </span><span class="ansi-yellow-fg"> 0.901078 </span>
+[02:20:17]          1<span class="ansi-green-fg">    68    </span><span class="ansi-red-fg">    15    </span><span class="ansi-yellow-fg"> 0.819277 </span><span class="ansi-yellow-fg"> 0.901078 </span>
+[02:20:17]    ───────────────────────────────────────────────
+[02:20:17]                       Overall     
+[02:20:17]           Accuracy<span class="ansi-green-fg">    0.807143    </span>
+[02:20:17]         (M)ROC-AUC<span class="ansi-green-fg">    0.901078    </span>
+[02:20:17] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">4</span> ──
+[02:20:17] Timer(growing classifier) starts.
+[02:20:17] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:17] Timer(growing classifier) stops. Time elapsed: 152 (ms.)
+[02:20:17] Computing performance on hold-out data instances...
+[02:20:17]    ───────────────────────────────────────────────
+[02:20:17]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:17]          0<span class="ansi-green-fg">    60    </span><span class="ansi-red-fg">    10    </span><span class="ansi-yellow-fg"> 0.857143 </span><span class="ansi-yellow-fg"> 0.888980 </span>
+[02:20:17]          1<span class="ansi-green-fg">    54    </span><span class="ansi-red-fg">    16    </span><span class="ansi-yellow-fg"> 0.771429 </span><span class="ansi-yellow-fg"> 0.888980 </span>
+[02:20:17]    ───────────────────────────────────────────────
+[02:20:17]                       Overall     
+[02:20:17]           Accuracy<span class="ansi-green-fg">    0.814286    </span>
+[02:20:17]         (M)ROC-AUC<span class="ansi-green-fg">    0.888980    </span>
+[02:20:17] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">5</span> ──
+[02:20:17] Timer(growing classifier) starts.
+[02:20:18] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:18] Timer(growing classifier) stops. Time elapsed: 178 (ms.)
+[02:20:18] Computing performance on hold-out data instances...
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:18]          0<span class="ansi-green-fg">    48    </span><span class="ansi-red-fg">    10    </span><span class="ansi-yellow-fg"> 0.827586 </span><span class="ansi-yellow-fg"> 0.886669 </span>
+[02:20:18]          1<span class="ansi-green-fg">    66    </span><span class="ansi-red-fg">    16    </span><span class="ansi-yellow-fg"> 0.804878 </span><span class="ansi-yellow-fg"> 0.886669 </span>
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]                       Overall     
+[02:20:18]           Accuracy<span class="ansi-green-fg">    0.814286    </span>
+[02:20:18]         (M)ROC-AUC<span class="ansi-green-fg">    0.886669    </span>
+[02:20:18] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">6</span> ──
+[02:20:18] Timer(growing classifier) starts.
+[02:20:18] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:18] Timer(growing classifier) stops. Time elapsed: 166 (ms.)
+[02:20:18] Computing performance on hold-out data instances...
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:18]          0<span class="ansi-green-fg">    49    </span><span class="ansi-red-fg">    16    </span><span class="ansi-yellow-fg"> 0.753846 </span><span class="ansi-yellow-fg"> 0.831385 </span>
+[02:20:18]          1<span class="ansi-green-fg">    57    </span><span class="ansi-red-fg">    18    </span><span class="ansi-yellow-fg"> 0.760000 </span><span class="ansi-yellow-fg"> 0.831385 </span>
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]                       Overall     
+[02:20:18]           Accuracy<span class="ansi-green-fg">    0.757143    </span>
+[02:20:18]         (M)ROC-AUC<span class="ansi-green-fg">    0.831385    </span>
+[02:20:18] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">7</span> ──
+[02:20:18] Timer(growing classifier) starts.
+[02:20:18] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:18] Timer(growing classifier) stops. Time elapsed: 173 (ms.)
+[02:20:18] Computing performance on hold-out data instances...
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:18]          0<span class="ansi-green-fg">    42    </span><span class="ansi-red-fg">    21    </span><span class="ansi-yellow-fg"> 0.666667 </span><span class="ansi-yellow-fg"> 0.852402 </span>
+[02:20:18]          1<span class="ansi-green-fg">    64    </span><span class="ansi-red-fg">    13    </span><span class="ansi-yellow-fg"> 0.831169 </span><span class="ansi-yellow-fg"> 0.852402 </span>
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]                       Overall     
+[02:20:18]           Accuracy<span class="ansi-green-fg">    0.757143    </span>
+[02:20:18]         (M)ROC-AUC<span class="ansi-green-fg">    0.852402    </span>
+[02:20:18] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">8</span> ──
+[02:20:18] Timer(growing classifier) starts.
+[02:20:18] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:18] Timer(growing classifier) stops. Time elapsed: 172 (ms.)
+[02:20:18] Computing performance on hold-out data instances...
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:18]          0<span class="ansi-green-fg">    47    </span><span class="ansi-red-fg">    13    </span><span class="ansi-yellow-fg"> 0.783333 </span><span class="ansi-yellow-fg"> 0.886076 </span>
+[02:20:18]          1<span class="ansi-green-fg">    61    </span><span class="ansi-red-fg">    18    </span><span class="ansi-yellow-fg"> 0.772152 </span><span class="ansi-yellow-fg"> 0.886076 </span>
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]                       Overall     
+[02:20:18]           Accuracy<span class="ansi-green-fg">    0.776978    </span>
+[02:20:18]         (M)ROC-AUC<span class="ansi-green-fg">    0.886076    </span>
+[02:20:18] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">9</span> ──
+[02:20:18] Timer(growing classifier) starts.
+[02:20:18] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:18] Timer(growing classifier) stops. Time elapsed: 155 (ms.)
+[02:20:18] Computing performance on hold-out data instances...
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:18]          0<span class="ansi-green-fg">    50    </span><span class="ansi-red-fg">    14    </span><span class="ansi-yellow-fg"> 0.781250 </span><span class="ansi-yellow-fg"> 0.891875 </span>
+[02:20:18]          1<span class="ansi-green-fg">    64    </span><span class="ansi-red-fg">    11    </span><span class="ansi-yellow-fg"> 0.853333 </span><span class="ansi-yellow-fg"> 0.891875 </span>
+[02:20:18]    ───────────────────────────────────────────────
+[02:20:18]                       Overall     
+[02:20:18]           Accuracy<span class="ansi-green-fg">    0.820144    </span>
+[02:20:18]         (M)ROC-AUC<span class="ansi-green-fg">    0.891875    </span>
+[02:20:18] ── Cross-validation ─ Run: <span class="ansi-blue-fg">1</span>, hold-out partition: <span class="ansi-blue-fg">10</span> ──
+[02:20:18] Timer(growing classifier) starts.
+[02:20:19] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:19] Timer(growing classifier) stops. Time elapsed: 173 (ms.)
+[02:20:19] Computing performance on hold-out data instances...
+[02:20:19]    ───────────────────────────────────────────────
+[02:20:19]            Positive  Negative  Accuracy  ROC-AUC  
+[02:20:19]          0<span class="ansi-green-fg">    47    </span><span class="ansi-red-fg">    12    </span><span class="ansi-yellow-fg"> 0.796610 </span><span class="ansi-yellow-fg"> 0.900021 </span>
+[02:20:19]          1<span class="ansi-green-fg">    59    </span><span class="ansi-red-fg">    20    </span><span class="ansi-yellow-fg"> 0.746835 </span><span class="ansi-yellow-fg"> 0.900021 </span>
+[02:20:19]    ───────────────────────────────────────────────
+[02:20:19]                       Overall     
+[02:20:19]           Accuracy<span class="ansi-green-fg">    0.768116    </span>
+[02:20:19]         (M)ROC-AUC<span class="ansi-green-fg">    0.900021    </span>
+[02:20:19] 
+[02:20:19] ────────── Cross-validation results ──────────
+[02:20:19]   Average accuracy: <span class="ansi-green-fg">0.797238</span> ± <span class="ansi-green-fg">0.018060</span>
+[02:20:19] Average (M)ROC-AUC: <span class="ansi-green-fg">0.888878</span> ± <span class="ansi-green-fg">0.018022</span>
+[02:20:19] 
+[02:20:19] Building and saving an overall classifier...
+[02:20:19] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:20:19] Saving classifier to: <span class="ansi-blue-fg">model/all_clf</span>
+[02:20:19] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We now subsequently do predictions on our test-dataset containing only text features!</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>silas gen-all -o /Users/kenghweeng/messiest_news/silas_exec/ data/train.csv data/test.csv
+<span class="o">!</span>silas learn -o model/all_clf settings.json
+<span class="o">!</span>silas predict -o predictions_text.csv model/all_clf data/test.csv
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:22:22] Generating metadata settings...
+[02:22:22] Probing file: <span class="ansi-blue-fg">&#34;data/train.csv&#34;</span>
+[02:22:22] Generating metadata ...
+[02:22:22] Verifying dataset headers...
+[02:22:22] Reading data from files...
+[02:22:22] Creating json objects...
+[02:22:22] Generating machine learning settings ...
+[02:22:22] Writing main settings in: <span class="ansi-blue-fg">/Users/kenghweeng/messiest_news/silas_exec/settings.json</span>
+[02:22:22] All files are written in: <span class="ansi-blue-fg">/Users/kenghweeng/messiest_news/silas_exec/</span>
+[02:22:22] Done.
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:22:22] Settings has been read from: <span class="ansi-blue-fg">settings.json</span>
+[02:22:22] Metadata has been read from: <span class="ansi-blue-fg">metadata.json</span>
+[02:22:22] Validation method:<span class="ansi-green-fg"> testing sample.</span>
+[02:22:22] 1396 training instances have been loaded from: <span class="ansi-blue-fg">data/train.csv</span>
+[02:22:22] 247 testing instances have been loaded from: <span class="ansi-blue-fg">data/test.csv</span>
+[02:22:22] Timer(growing classifier) starts.
+[02:22:23] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:22:23] Timer(growing classifier) stops. Time elapsed: 161 (ms.)
+[02:22:23] Computing performance on testing data instances...
+[02:22:23]    ───────────────────────────────────────────────
+[02:22:23]            Positive  Negative  Accuracy  ROC-AUC  
+[02:22:23]          0<span class="ansi-green-fg">    92    </span><span class="ansi-red-fg">    18    </span><span class="ansi-yellow-fg"> 0.836364 </span><span class="ansi-yellow-fg"> 0.931719 </span>
+[02:22:23]          1<span class="ansi-green-fg">   117    </span><span class="ansi-red-fg">    20    </span><span class="ansi-yellow-fg"> 0.854015 </span><span class="ansi-yellow-fg"> 0.931719 </span>
+[02:22:23]    ───────────────────────────────────────────────
+[02:22:23]                       Overall     
+[02:22:23]           Accuracy<span class="ansi-green-fg">    0.846154    </span>
+[02:22:23]         (M)ROC-AUC<span class="ansi-green-fg">    0.931719    </span>
+[02:22:23] 
+[02:22:23] Saving classifier to: <span class="ansi-blue-fg">model/all_clf</span>
+[02:22:23] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+         __ _ _           
+        / _(_) | __ _ ___ 
+        \ \| | |/ _` / __|
+        _\ \ | | (_| \__ \
+        \__/_|_|\__,_|___/
+
+Silas <span class="ansi-blue-fg">v0.8.7+e</span>
+<span class="ansi-yellow-fg">Copyright (c) 2018-2020 Dependable Intelligence Pty Ltd.
+All rights reserved.
+
+</span>Please address your comments, bug reports and general inquiries about Silas to: support@depintel.com
+
+-&gt; Maximum concurrency: <span class="ansi-blue-fg">16</span>
+
+[02:22:23] Loading classifier from : <span class="ansi-blue-fg">model/all_clf</span>
+[02:22:23] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:22:23] Timer(Reading data file) starts.
+[02:22:23] Timer(Reading data file) stops. Time elapsed: 36 (ms.)
+[02:22:23] 247 instances to predict have been loaded from: <span class="ansi-blue-fg">data/test.csv</span>
+[02:22:23] Performing predictions...
+[02:22:23] <span class="ansi-yellow-fg">[**************************************************]</span> (100.00%)
+[02:22:23] Predictions have been saved to: <span class="ansi-blue-fg">predictions_text.csv</span>
 </pre>
 </div>
 </div>
