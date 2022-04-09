@@ -10,5 +10,5 @@ the number of workers to run multi-threading scraping jobs for.
 * 2. Machine-learning work for misinformation classification on articles collected from Point 1.
 If you did not run Point 1, we have already provided the generated dataset as a `pickle` file: at [data/majorleagues_20192021_combined.pkl](https://github.com/kenghweeng/sports-messiest-news/blob/main/data/majorleagues_20192021_combined.pkl)
 
-You can then read the [soccer_eda.ipynb](https://github.com/kenghweeng/sports-messiest-news/blob/main/soccer_eda.ipynb)
- notebook for a comprehensive overview on ML experiments done.
+You can then read the [soccer_eda.html](https://github.com/kenghweeng/sports-messiest-news/blob/main/soccer_eda.html)
+ notebook for a comprehensive overview on ML experiments done. HTML viewing is preferred for the contents-page to work as intended, otherwise, looking at the ipynb notebook itself is okay too.
