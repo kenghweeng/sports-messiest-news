@@ -283,7 +283,4 @@ if __name__ == "__main__":
     
     # ablation using both sets of information:
     # Understanding how to use silas for ablation studies
-    # wordclouds, visualizations, REFCV, correlation matrix.
     
-    # IF GOT TIME:
-    # talk about inference, how to predict for new teams.
