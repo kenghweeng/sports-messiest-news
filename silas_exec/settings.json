@@ -1,5 +1,5 @@
 {
-    "metadata-file": "clean-metadata.json",
+    "metadata-file": "metadata.json",
     "output-feature": "label",
     "ignored-features": [],
     "learner-settings": {
@@ -22,11 +22,13 @@
     },
     "training-dataset": {
         "type": "CSV",
-        "path": "data/clean-train.csv"
+        "path": "data/train.csv"
     },
     "validation-settings": {
-        "type": "CV",
-        "number-of-runs": 1,
-        "number-of-partitions": 10
+        "type": "TT",
+        "testing-dataset": {
+            "type": "CSV",
+            "path": "data/test.csv"
+        }
     }
 }
