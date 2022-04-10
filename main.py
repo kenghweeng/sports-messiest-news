@@ -281,6 +281,3 @@ if __name__ == "__main__":
     
     print(f'We have a total of {combined.shape[0]} articles and a total of {combined.shape[1]} enriched columns in our transfer-news dataset.')
     
-    # ablation using both sets of information:
-    # Understanding how to use silas for ablation studies
-    
